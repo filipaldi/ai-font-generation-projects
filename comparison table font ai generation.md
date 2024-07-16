@@ -83,3 +83,25 @@
 | [@ParamFontParameterizableFonts2001]       | **ParamFont**           | Parameterizable fonts based on shape components                                                              | 2001     | interpolation, style transfer                                             | vector paths                           | Vector outlines of glyphs                           | Shape components with global, group, and local parameters                           | Parametric                                          | vector paths           | Font outlines                                    | Component-based with parameterizable geometric shapes             | Not specified                                               | Not specified (component-based fonts)                                                                                                                                               | Not specified                                                                                                                                      | Not specified                                                                                                | Shape components, Parameterizable geometric shapes, Global and local parameters                                                              | Not specified                                                       | Not specified                                                                               | Qualitative visual inspection, Parameter variation study                                                   | Not specified                                                                      | Yes                                     |
 | [@ZiGANFinegrainedChinese2021]             | **ZiGAN**               | ZiGAN: Fine-grained Chinese Calligraphy Font Generation via a Few-shot Style Transfer Approach               | 2021     | style transfer                                                            | raster images                          | Chinese calligraphy characters                      | Conditional GAN, cycle-consistent adversarial network                               | Image generation                                    | raster images          | Calligraphy characters                           | Feature distributions, Hilbert space mapping                      | Not specified                                               | Not specified                                                                                                                                                                       | Train: 6200 Song style images, Test: 100-200 calligraphy images                                                                                    | Generated using TrueType fonts, Standard font library                                                        | Few-shot learning, style loss, alignment loss, CAM loss                                                                                      | GAN (CycleGAN, pix2pix)                                             | Encoder-decoder with multiple layers                                                        | Fréchet Inception Distance (FID), Turing test                                                              | zi2zi, pix2pix, U-GAT-IT, CycleGAN, StarGAN, CalliGAN                              | Not specified                           |
 
+## Exlanation
+- **Tasks**: The primary tasks the model/paper addresses (e.g., reconstruction, completion, style transfer, cross-modal, contour completion, etc.).
+- **Input Type**: vector paths | raster images | points | other
+- **Input Detail**: Types of inputs the model uses (e.g., vector paths, glyph images, SVG commands, etc.).
+- **Encoding Representation**: How the input data is encoded (e.g., sequential, raster, etc.).
+- **Decoding Modality**: How the output data is generated or decoded (e.g., sequential, raster, etc.).
+- **Output Type**: vector paths | raster images | points | other
+- **Output types**: Types of outputs the model produces (e.g., images, fonts, individual glyphs, etc.).
+- **Representation**: The representation format used in the model (e.g., embeddings, vectors, etc.).
+- **Latent Space**: Characteristics of the latent space used in the model, if applicable.
+- **Datasets Size**: Size of the datasets used for training and testing.
+- **Training / Testing Distribution**: Distribution of the data between training and testing sets.
+- **Dataset Source**: Source of the datasets used.
+- **Techniques and Features**: Key techniques and features of the model.
+- **Architecture Base**: The base architecture of the model (e.g., Transformer, RNN, etc.).
+- **Layers**: Layers descriptions used in the model.
+- **Output Evaluation Methods**: Methods used to evaluate the model's output (e.g., MAE, RMSE, FID, LPIPS, etc.).
+- **Evaluation Comparison**: If model have been evaluated, which other project was compared with.
+- **Design Expert**: The involvement of design domain expert designers in the project, e.g. type designer, graphic designer
+
+## Issues
+Pleas feel free to report issues or pull-request
