@@ -1,0 +1,2922 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>comparison table font ai generation</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-size: 0.7em;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.4em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125vw 0.5vw 0.25vw 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8vw 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+      margin-bottom: 0em;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
+</head>
+<body>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 3em" />
+<col style="width: 1em" />
+<col style="width: 2em" />
+<col style="width: 5em" />
+<col style="width: 3em" />
+<col style="width: 10em" />
+<col style="width: 3em" />
+<col style="width: 3em" />
+<col style="width: 3em" />
+<col style="width: 3em" />
+<col style="width: 11em" />
+<col style="width: 10em" />
+<col style="width: 6em" />
+<col style="width: 8em" />
+<col style="width: 3em" />
+<col style="width: 6em" />
+<col style="width: 9em" />
+<col style="width: 5em" />
+<col style="width: 2em" />
+</colgroup>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Year</strong></th>
+<th><strong>Citkey</strong></th>
+<th><strong>Tasks</strong></th>
+<th><strong>Input types</strong></th>
+<th><strong>Encoding Representation</strong></th>
+<th><strong>Decoding Modality</strong></th>
+<th><strong>Output types</strong></th>
+<th><strong>Representation</strong></th>
+<th><strong>Latent Space</strong></th>
+<th><strong>Datasets Size</strong></th>
+<th><strong>Training / Testing Distribution</strong></th>
+<th><strong>Dataset Source</strong></th>
+<th><strong>Techniques and Features</strong></th>
+<th><strong>Architecture Base</strong></th>
+<th><strong>Layers</strong></th>
+<th><strong>Output Evaluation Methods</strong></th>
+<th><strong>Evaluation Comparison</strong></th>
+<th><strong>Type Designer Involvement as expert</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Font Style Interpolation with Diffusion Models</strong></td>
+<td>2024</td>
+<td><span class="citation" data-cites="FontStyleInterpolation2024">[<a
+href="#ref-FontStyleInterpolation2024"
+role="doc-biblioref">32</a>]</span></td>
+<td>interpolation</td>
+<td>Latin alphabet images (64x64 pixels)</td>
+<td>Conditional diffusion model (U-Net architecture)</td>
+<td>Iterative denoising process</td>
+<td>Font images (64x64 pixels)</td>
+<td>Real-valued condition vectors, noise images</td>
+<td>Not specified</td>
+<td>MyFonts: 17,412 fonts; GoogleFonts: 2,545 fonts</td>
+<td>Train: 13,938 fonts, Val: 1,734 fonts, Test: 1,740 fonts</td>
+<td>MyFonts, GoogleFonts</td>
+<td>Image-blending, condition-blending, noise-blending approaches</td>
+<td>U-Net (diffusion model)</td>
+<td>Denoising U-Net with several layers</td>
+<td>Recognition accuracy, qualitative comparison</td>
+<td>FANnet, Diff-Font</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>FTransGAN</strong></td>
+<td>2023</td>
+<td><span class="citation" data-cites="chenhaoFTransGANPyTorch2023">[<a
+href="#ref-chenhaoFTransGANPyTorch2023"
+role="doc-biblioref">13</a>]</span></td>
+<td>style transfer, font completion</td>
+<td>Grayscale images of glyphs</td>
+<td>Multi-level attention with Context-aware and Layer Attention
+Networks</td>
+<td>Sequential</td>
+<td>Grayscale glyphs</td>
+<td>Local and global feature representation</td>
+<td>Not specified</td>
+<td>847 fonts, each with 52 English letters and ~1000 Chinese
+characters</td>
+<td>Train: 847 fonts, Test: 29 fonts</td>
+<td>Constructed by authors</td>
+<td>Multi-level attention network, Context-aware Attention Network,
+Layer Attention Network</td>
+<td>GAN-based</td>
+<td>Encoder-Decoder structure with 3 Conv layers, 6 ResNet blocks, and 3
+up-conv layers</td>
+<td>L1 loss, Style loss, Content loss, MAE, SSIM, MS-SSIM, mFID, Top-1
+accuracy</td>
+<td>EMD, DFS</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>SVGformer</strong></td>
+<td>2023</td>
+<td><span class="citation"
+data-cites="SVGformerRepresentationLearning2023">[<a
+href="#ref-SVGformerRepresentationLearning2023"
+role="doc-biblioref">8</a>]</span></td>
+<td>classification, interpolation, retrieval</td>
+<td>Continuous SVG commands</td>
+<td>Sequential and Geometric representation</td>
+<td>Sequential</td>
+<td>Vector graphics (SVGs)</td>
+<td>Embeddings of continuous commands and geometric information</td>
+<td>Not specified</td>
+<td>Google Fonts, Icons dataset: Size not specified</td>
+<td>Not specified</td>
+<td>Google Fonts, Icons datasets</td>
+<td>Geometric self-attention, Graph convolutional network (GCN),
+Continuous value embedding</td>
+<td>Transformer-based</td>
+<td>Encoder: Multiple geometric self-attention modules, Decoder:
+Multi-head attention</td>
+<td>Chamfer distance (CD), Cross-entropy (CE)</td>
+<td>DeepSVG, LayoutTransformer</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>DS-Font</strong></td>
+<td>2023</td>
+<td><span class="citation" data-cites="DSFontFewshotFont2023">[<a
+href="#ref-DSFontFewshotFont2023"
+role="doc-biblioref">21</a>]</span></td>
+<td>font completion</td>
+<td>Raster images of glyphs</td>
+<td>Style representation through multi-layer style projector (MSP)</td>
+<td>Sequential</td>
+<td>Font glyphs</td>
+<td>Embeddings of style codes</td>
+<td>Not specified</td>
+<td>1,425 fonts, 52 glyphs per font</td>
+<td>Train: 90%, Test: 10%</td>
+<td>Public datasets</td>
+<td>Multi-layer style projector (MSP), multi-task patch discriminator,
+contrastive learning</td>
+<td>GAN-based</td>
+<td>Multi-layer style projector, multi-task patch discriminator,
+generator with attention mechanism</td>
+<td>L1 loss, LPIPS, RMSE, Acc(C), Acc(S), FID(C), FID(S)</td>
+<td>LF-Font, MX-Font, DG-Font, FTransGAN, MF-Net</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>VecFontSDF</strong></td>
+<td>2023</td>
+<td><span class="citation"
+data-cites="VecFontSDFLearningReconstruct2023">[<a
+href="#ref-VecFontSDFLearningReconstruct2023"
+role="doc-biblioref">68</a>]</span></td>
+<td>style transfer</td>
+<td>Raster images of glyphs</td>
+<td>Spatial representation</td>
+<td>Sequential</td>
+<td>Font glyphs</td>
+<td>Signed Distance Function (SDF)</td>
+<td>Multi-scale</td>
+<td>Google Fonts: 143K glyph images</td>
+<td>Train: 90%, Test: 10%</td>
+<td>Google Fonts</td>
+<td>SDF rendering, Style transfer, Multi-scale feature extraction</td>
+<td>CNN-based</td>
+<td>16 convolutional layers</td>
+<td>MSE, SSIM, FID</td>
+<td>DeepSVG, Im2vec, DeepVecFont</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>DeepVecFont-v2</strong></td>
+<td>2023</td>
+<td><span class="citation"
+data-cites="DeepVecFontv2ExploitingTransformers2023">[<a
+href="#ref-DeepVecFontv2ExploitingTransformers2023"
+role="doc-biblioref">63</a>]</span></td>
+<td>interpolation, font completion</td>
+<td>Raster images and vector outlines</td>
+<td>Relaxation representation for vector outlines</td>
+<td>Sequence-to-sequence</td>
+<td>Vector glyphs</td>
+<td>Embeddings of drawing commands and coordinates</td>
+<td>Not specified</td>
+<td>English: 8,035 fonts, Chinese: 212 fonts</td>
+<td>Train: 8,035 (EN), 212 (CN), Test: 1,425 (EN), 34 (CN)</td>
+<td>Google Fonts</td>
+<td>Transformer encoder-decoder, Bezier curve alignment,
+Self-refinement</td>
+<td>Transformer-based</td>
+<td>6 Transformer layers</td>
+<td>Reconstruction errors (L1), IoU, Bezier curve alignment loss</td>
+<td>DeepSVG, DeepVecFont</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>Contour Completion</strong></td>
+<td>2023</td>
+<td><span class="citation"
+data-cites="ContourCompletionTransformers2023">[<a
+href="#ref-ContourCompletionTransformers2023"
+role="doc-biblioref">45</a>]</span></td>
+<td>contour completion</td>
+<td>Contour sequences with missing points</td>
+<td>Sequence embedding</td>
+<td>Sequence-to-sequence</td>
+<td>Completed contour sequences</td>
+<td>5D vectors (x, y, Contour ID, Point ID, curve flag)</td>
+<td>Not specified</td>
+<td>Google Fonts: 489 Serif, 1,275 Sans-Serif, 327 Display, 91
+Handwriting</td>
+<td>Train: 1,777 fonts, Val: 200 fonts, Test: 205 fonts</td>
+<td>Google Fonts</td>
+<td>Multi-task learning, Loss functions for contour, point, coordinate,
+and flags</td>
+<td>Transformer-based</td>
+<td>4 Transformer layers (Encoder &amp; Decoder)</td>
+<td>L1 distance, Hausdorff distance</td>
+<td>Standard Transformer-Encoder</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>DualVector</strong></td>
+<td>2023</td>
+<td><span class="citation"
+data-cites="DualVectorUnsupervisedVector2023">[<a
+href="#ref-DualVectorUnsupervisedVector2023"
+role="doc-biblioref">40</a>]</span></td>
+<td>interpolation, font completion</td>
+<td>Glyph images</td>
+<td>Joint vector and pixel representation</td>
+<td>Sequential</td>
+<td>Vector glyphs</td>
+<td>Dual-part vector representation</td>
+<td>Shared between modalities</td>
+<td>Public datasets: 1,425 fonts, 52 glyphs per font</td>
+<td>Train: 90%, Test: 10%</td>
+<td>Public datasets</td>
+<td>Dual-part representation, Differentiable rendering, Contour
+refinement, UDF initialization</td>
+<td>Transformer-based</td>
+<td>Encoder: CNN + Transformer (6 layers), Decoder: Transformer +
+MLP</td>
+<td>SSIM, L1, s-IoU, LPIPS</td>
+<td>DeepVecFont, Im2Vec, Multi-Implicits</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>Consistent Typography Generation</strong></td>
+<td>2023</td>
+<td><span class="citation"
+data-cites="DiverseConsistentTypography2023">[<a
+href="#ref-DiverseConsistentTypography2023"
+role="doc-biblioref">52</a>]</span></td>
+<td>style transfer</td>
+<td>Graphic documents with text elements</td>
+<td>Autoregressive Transformer with attention mechanism</td>
+<td>Sequential</td>
+<td>Typographic designs</td>
+<td>Fine-grained typographic attributes</td>
+<td>Not specified</td>
+<td>23,475 design templates</td>
+<td>Train: 18,780, Test: 2,347, Val: 2,347</td>
+<td>Crello dataset</td>
+<td>Structure-preserved sampling, Fine-grained attribute generation,
+Consistency and diversity in styling</td>
+<td>Transformer-based</td>
+<td>8 Transformer blocks</td>
+<td>Attribute metrics (accuracy, MAE, color difference), Structure
+score, Diversity score</td>
+<td>CanvasVAE, MFC</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>Joint Implicit Neural</strong></td>
+<td>2023</td>
+<td><span class="citation"
+data-cites="JointImplicitJointImplicit2023">[<a
+href="#ref-JointImplicitJointImplicit2023"
+role="doc-biblioref">11</a>]</span></td>
+<td>interpolation</td>
+<td>Pixelated font images</td>
+<td>Joint neural representation using SDF and probabilistic corner field
+(CF)</td>
+<td>Sequential</td>
+<td>Vector fonts</td>
+<td>Embeddings of SDF and CF</td>
+<td>Not specified</td>
+<td>1,425 fonts, 52 glyphs per font</td>
+<td>Train: 90%, Test: 10%</td>
+<td>Public datasets</td>
+<td>Implicit neural representation, Corner field modeling, Dual
+contouring for vectorization</td>
+<td>HyperNetworks-based</td>
+<td>Multi-layer perceptrons (MLPs) for SDF and CF networks</td>
+<td>L1 error, SSIM, s-mIoU</td>
+<td>Im2Vec, Multi-Implicit, DeepVecFont, Attr2Font</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>VQ-font</strong></td>
+<td>2023</td>
+<td><span class="citation" data-cites="VQFontFewShot2023">[<a
+href="#ref-VQFontFewShot2023" role="doc-biblioref">46</a>]</span></td>
+<td>font completion</td>
+<td>Raster images of glyphs</td>
+<td>Similarity-guided global style and quantization local style
+representation</td>
+<td>Sequential</td>
+<td>Font glyphs</td>
+<td>Discrete latent codes for component-level styles</td>
+<td>Not specified</td>
+<td>386 Chinese fonts, 3,500 characters each</td>
+<td>Train: 370 fonts, 3,000 characters each; Test: 15 unseen fonts,
+3,000 seen characters each, 15 unseen fonts, 500 unseen characters
+each</td>
+<td>Custom dataset</td>
+<td>Global and local style aggregation, Cross-attention-based style
+transfer, GAN-based training</td>
+<td>GAN and VQ-VAE</td>
+<td>3 Transformer layers for cross-attention, 8 attention heads</td>
+<td>SSIM, RMSE, LPIPS, FID, User Study</td>
+<td>FUNIT, MX-Font, LF-Font, DG-Font, AGIS-net, FS-Font</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>VecFusion</strong></td>
+<td>2023</td>
+<td><span class="citation" data-cites="VecFusionVectorFont2023">[<a
+href="#ref-VecFusionVectorFont2023"
+role="doc-biblioref">58</a>]</span></td>
+<td>interpolation, completion</td>
+<td>Raster images of glyphs</td>
+<td>Cascaded diffusion model with vector diffusion</td>
+<td>Sequential</td>
+<td>Vector glyphs</td>
+<td>Mixed discrete-continuous representation for control points</td>
+<td>Not specified</td>
+<td>1,424 fonts, 577 distinct Unicode glyphs</td>
+<td>Train: 314K glyphs, Val: 5K glyphs, Test: 5K glyphs</td>
+<td>Google Fonts</td>
+<td>Cascaded diffusion model, Mixed discrete-continuous representation,
+Transformer-based vector model</td>
+<td>Transformer-based</td>
+<td>8 Transformer layers</td>
+<td>L1, Chamfer Distance (CD), Control point difference (#cp diff),
+Vector path difference (#vp diff)</td>
+<td>ChiroDiff, DeepVecFont-v2</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>PGM</strong></td>
+<td>2022</td>
+<td><span class="citation" data-cites="PGMFontRepresentation2022">[<a
+href="#ref-PGMFontRepresentation2022"
+role="doc-biblioref">14</a>]</span></td>
+<td>font retrieval, style transfer</td>
+<td>Glyph images of characters</td>
+<td>Paired-glyph matching with contrastive learning</td>
+<td>Parametric</td>
+<td>Font embeddings</td>
+<td>Latent space with high dimensional glyph embeddings</td>
+<td>Not specified</td>
+<td>O’Donovan dataset: 1,088 fonts (training), 28 fonts (validation);
+OFL: 3,702 fonts (training), 100 fonts (validation); Capitals64: 7,649
+fonts (training), 1,473 fonts (validation)</td>
+<td>O’Donovan: train/val (1,088/28), OFL: train/val (3,702/100),
+Capitals64: train/val/test (7,649/1,473/1,560)</td>
+<td>O’Donovan dataset, Open Font Library (OFL), Capitals64</td>
+<td>Paired-glyph matching, Contrastive learning, ResNet18 backbone,
+Retrieval accuracy, Font attribute prediction</td>
+<td>ResNet18 backbone</td>
+<td>Not specified</td>
+<td>Retrieval mean accuracy (MACCRet), Font attribute prediction
+L1-error, Image L1-error</td>
+<td>Classification, Style Transfer, Autoencoder, Srivatsan et al.</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>StrokeStyles</strong></td>
+<td>2022</td>
+<td><span class="citation"
+data-cites="StrokeStylesStrokebasedSegmentation2022">[<a
+href="#ref-StrokeStylesStrokebasedSegmentation2022"
+role="doc-biblioref">6</a>]</span></td>
+<td>style transfer</td>
+<td>Glyph outlines</td>
+<td>Stroke-based segmentation with curvilinear shape features and
+augmented medial axis</td>
+<td>Parametric</td>
+<td>Stylized glyphs</td>
+<td>Shape components and stroke-based representation</td>
+<td>Not specified</td>
+<td>Not specified</td>
+<td>Not specified</td>
+<td>Not specified</td>
+<td>Stroke-based segmentation, Curvilinear shape features, Augmented
+medial axis, Junction types</td>
+<td>Not specified</td>
+<td>Not specified</td>
+<td>Qualitative visual inspection, User study</td>
+<td>Not specified</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>Noisy Impressions</strong></td>
+<td>2022</td>
+<td><span class="citation" data-cites="SharedLatentSpace2022">[<a
+href="#ref-SharedLatentSpace2022"
+role="doc-biblioref">28</a>]</span></td>
+<td>cross-modal: shape-to-impression, impression-to-shape</td>
+<td>Glyph images, impression words</td>
+<td>Shared latent space representation</td>
+<td>Cross-modal</td>
+<td>Glyph images, impression words</td>
+<td>Vector representations for font shapes and impression words</td>
+<td>Shared latent space with DeepSets</td>
+<td>MyFonts: 18,815 fonts</td>
+<td>Train: 9,980, Validation: 2,992, Test: 1,223</td>
+<td>MyFonts dataset</td>
+<td>DeepSets for shape-relevant impression filtering, cross-modal
+autoencoders</td>
+<td>Autoencoder, ResNet18-based encoder</td>
+<td>ResNet18 encoder, deconvolutional layers for decoder</td>
+<td>Precision@K, average retrieval rank, Hausdorff distance</td>
+<td>Impressions2Font</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>XMP-Font</strong></td>
+<td>2022</td>
+<td><span class="citation"
+data-cites="XMPFontSelfSupervisedCrossModality2022">[<a
+href="#ref-XMPFontSelfSupervisedCrossModality2022"
+role="doc-biblioref">38</a>]</span></td>
+<td>font completion</td>
+<td>Glyph images, stroke labels</td>
+<td>Cross-modality representation</td>
+<td>Cross-modality</td>
+<td>Glyphs</td>
+<td>Stroke-level, component-level, character-level styles</td>
+<td>Pre-trained with self-supervised signals</td>
+<td>100 font styles</td>
+<td>Train: 90%, Test: 10%</td>
+<td>Founder font libraries</td>
+<td>Cross-modality transformer-based encoder, ECA modules, LSTM-based
+stroke loss</td>
+<td>Transformer-based</td>
+<td>Cross-modality encoder with BERT layers, 4 ECA modules</td>
+<td>FID, PSNR, SSIM, L1, User study</td>
+<td>StarGAN-v2, FUNIT, LF-Font, MX-Font, DG-Font</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>CVFont</strong></td>
+<td>2022</td>
+<td><span class="citation"
+data-cites="CVFontSynthesizingChinese2022">[<a
+href="#ref-CVFontSynthesizingChinese2022"
+role="doc-biblioref">34</a>]</span></td>
+<td>style transfer</td>
+<td>Raster images of glyphs</td>
+<td>Hierarchical approach to component extraction, using CPD algorithm
+for registration</td>
+<td>Sequential</td>
+<td>Chinese vector fonts</td>
+<td>Components and strokes</td>
+<td>Multi-scale</td>
+<td>GB2312 Kaiti font library (6763 characters), 70 Chinese fonts</td>
+<td>Pre-train: 60 fonts, Online: 10 fonts, Testing: 69 fonts</td>
+<td>Founder Group</td>
+<td>Layout prediction with Faster R-CNN, U-Net based generator, Skeleton
+extraction, Shape decomposition</td>
+<td>ResNet-101 + U-Net</td>
+<td>ResNet-101 backbone, U-Net generator with 3 downsampling layers,
+Faster R-CNN detector</td>
+<td>IoU scores, Qualitative user study</td>
+<td>Rewrite, pix2pix, CycleGAN, EasyFont, zi2zi</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><strong>Arbitrary Font Generation</strong></td>
+<td>2022</td>
+<td><span class="citation" data-cites="ArbitraryFontGeneration2022">[<a
+href="#ref-ArbitraryFontGeneration2022"
+role="doc-biblioref">33</a>]</span></td>
+<td>style transfer</td>
+<td>Raster images of fonts</td>
+<td>Spatial representation</td>
+<td>Sequential</td>
+<td>Font images</td>
+<td>Disentangled features of text content and font style</td>
+<td>N/A</td>
+<td>Korean: 238 train, 40 test; Chinese: 185 train, 15 test; English:
+185 train, 15 test</td>
+<td>Train: 85%, Test: 15%</td>
+<td>Noonnu, Internet, Chinese Font Design</td>
+<td>Stacked input, Consistency loss, VGG-19, AdaIN, Hallucinated
+stack</td>
+<td>VGG-19 based</td>
+<td>VGG-19 layers, AdaIN layers, ConvBlock layers</td>
+<td>FID, L1 distance, Perceptual distance</td>
+<td>FUNIT, EMD</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>SE-GAN</strong></td>
+<td>2022</td>
+<td><span class="citation" data-cites="SEGANSkeletonEnhanced2022">[<a
+href="#ref-SEGANSkeletonEnhanced2022"
+role="doc-biblioref">72</a>]</span></td>
+<td>style transfer</td>
+<td>Raster images of brush handwriting</td>
+<td>Spatial representation</td>
+<td>Sequential</td>
+<td>Font glyphs</td>
+<td>Skeleton-based representation</td>
+<td>Multi-scale</td>
+<td>Custom dataset: 15,799 high-resolution images</td>
+<td>Train: 80%, Dev: 10%, Test: 10%</td>
+<td>Custom dataset</td>
+<td>GAN-based model, Self-attentive Refined Attention Module (SAttRAM),
+skeleton discriminator</td>
+<td>GAN-based</td>
+<td>4 residual blocks for each encoder, 2 discriminators</td>
+<td>Content accuracy, FID, User preference</td>
+<td>zi2zi, CycleGAN, StarGAN, DF-Font</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><strong>FontNet</strong></td>
+<td>2022</td>
+<td><span class="citation" data-cites="FontNetClosingGap2022">[<a
+href="#ref-FontNetClosingGap2022"
+role="doc-biblioref">44</a>]</span></td>
+<td>font style transfer, font completion</td>
+<td>Font images</td>
+<td>Embedding</td>
+<td>Adversarial generation</td>
+<td>High-resolution font images</td>
+<td>Embeddings of style and content features</td>
+<td>Style embedding space</td>
+<td>90 Korean fonts, 2,350 characters</td>
+<td>Train: 75% fonts, Test: 25% fonts</td>
+<td>Naver Fonts</td>
+<td>StyleGAN, Separator network, Triplet loss</td>
+<td>StyleGAN-based</td>
+<td>Encoder-Decoder with separator network</td>
+<td>SSIM, mFID, Top-1 accuracy</td>
+<td>MX-Font, FUNIT</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>Impression Labels</strong></td>
+<td>2022</td>
+<td><span class="citation" data-cites="FontGenerationMissing2022">[<a
+href="#ref-FontGenerationMissing2022"
+role="doc-biblioref">43</a>]</span></td>
+<td>style transfer</td>
+<td>Raster images of glyphs</td>
+<td>Conditional GAN with missing label handling</td>
+<td>Sequential</td>
+<td>Font glyphs</td>
+<td>Impression label embeddings</td>
+<td>Not specified</td>
+<td>MyFonts: 17,202 fonts, 1,430 impression labels</td>
+<td>Train: 90%, Test: 10%</td>
+<td>MyFonts dataset</td>
+<td>Co-occurrence-based missing label estimator, Impression label space
+compressor, Style consistency discriminator</td>
+<td>GAN-based</td>
+<td>Progressive GAN with auxiliary classifiers</td>
+<td>FID, Intra-FID, mAP-train, mAP-test</td>
+<td>C-GAN+, AC-GAN+, CP-GAN+, Imp2Font</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>SVGVecFont</strong></td>
+<td>2022</td>
+<td><span class="citation" data-cites="SVGVecFontSVGVector2022">[<a
+href="#ref-SVGVecFontSVGVector2022"
+role="doc-biblioref">2</a>]</span></td>
+<td>interpolation, completion</td>
+<td>SVG vector graphics</td>
+<td>Sequence-to-sequence</td>
+<td>Sequence-to-sequence</td>
+<td>Vector glyphs</td>
+<td>Commands and Coordinates</td>
+<td>Not specified</td>
+<td>Chinese: 407 fonts, 3396 characters</td>
+<td>Train: 397 fonts, Test: 10 fonts</td>
+<td>Public datasets</td>
+<td>Transformer encoder-decoder, Style Aggregation Module</td>
+<td>Transformer-based</td>
+<td>Multi-head projection, Self-reconstruction branch</td>
+<td>L1 loss, Adversarial loss, SSIM, LPIPS, FID</td>
+<td>DeepVecFont, Diff-Font, GAS-NeXt</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>GenText</strong></td>
+<td>2022</td>
+<td><span class="citation"
+data-cites="GenTextUnsupervisedArtistic2022">[<a
+href="#ref-GenTextUnsupervisedArtistic2022"
+role="doc-biblioref">23</a>]</span></td>
+<td>text effect transfer, font style transfer, image style transfer,
+font interpolation</td>
+<td>Content images, font images, texture reference images</td>
+<td>Spatial and global code representation</td>
+<td>Sequence-to-sequence</td>
+<td>Artistic text images</td>
+<td>Embeddings (spatial and global code)</td>
+<td>Not specified</td>
+<td>Artistic text benchmarks (e.g., TE141K)</td>
+<td>Train: 90%, Test: 10%</td>
+<td>Public datasets</td>
+<td>GAN, unsupervised learning, stylization and destylization</td>
+<td>Encoder-decoder GAN</td>
+<td>4 downsampling residual blocks, 2 convolution layers</td>
+<td>PSNR, SSIM, Perceptual loss, Style loss</td>
+<td>AdaIN, Dpatch, NCE, CycleGAN</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>FS-Font</strong></td>
+<td>2022</td>
+<td><span class="citation" data-cites="FSFontFewShotFont2022">[<a
+href="#ref-FSFontFewShotFont2022"
+role="doc-biblioref">56</a>]</span></td>
+<td>font completion</td>
+<td>Raster images of glyphs</td>
+<td>Fine-grained local style representation through cross-attention</td>
+<td>Sequential</td>
+<td>Stylized glyph images</td>
+<td>Fine-grained local style representation (FLS)</td>
+<td>Not specified</td>
+<td>407 fonts, 3,396 characters</td>
+<td>Train: 397 fonts, 2,896 characters, Test: 10 fonts, 500 unseen
+characters (UFUC), 2,896 seen characters (UFSC)</td>
+<td>Custom dataset</td>
+<td>Cross-attention based style aggregation, Self-reconstruction branch,
+Reference selection strategy</td>
+<td>Convolutional and Residual Blocks</td>
+<td>Multiple convolutional and residual layers</td>
+<td>L1 loss, RMSE, SSIM, LPIPS, User Study</td>
+<td>FUNIT, DG-Font, MX-Font, AGIS-net, LF-Font</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>PGMh</strong></td>
+<td>2022</td>
+<td><span class="citation" data-cites="PGMFontRepresentation2022">[<a
+href="#ref-PGMFontRepresentation2022"
+role="doc-biblioref">14</a>]</span></td>
+<td>font retrieval, style transfer, font completion</td>
+<td>Glyph images</td>
+<td>Paired-glyph matching learning</td>
+<td>Sequential</td>
+<td>Font embeddings</td>
+<td>Embeddings of glyph representations</td>
+<td>Not specified</td>
+<td>O’Donovan: 1,088 fonts, Capitals64: 10,682 fonts, Open Font Library
+(OFL): 3,802 fonts</td>
+<td>O’Donovan: Train: 1,088 fonts, Val: 28 fonts, Capitals64: Train:
+7,649 fonts, Val: 1,473 fonts, Test: 1,560 fonts, OFL: Train: 3,702
+fonts, Val: 100 fonts</td>
+<td>O’Donovan dataset, Capitals64, OFL</td>
+<td>Paired-glyph matching, Cross-entropy loss, L1 loss, Contrastive
+learning</td>
+<td>ResNet18-based</td>
+<td>ResNet18 backbone, additional layers for projection head</td>
+<td>Retrieval mean accuracy (MACC_Ret), Font attribute prediction
+(L1-error)</td>
+<td>Classification, Style Transfer, Autoencoder</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>Neural Font Rendering</strong></td>
+<td>2022</td>
+<td><span class="citation" data-cites="NeuralFontRendering2022">[<a
+href="#ref-NeuralFontRendering2022"
+role="doc-biblioref">1</a>]</span></td>
+<td>interpolation</td>
+<td>Vector glyph outlines</td>
+<td>Implicit neural representation</td>
+<td>Sequential</td>
+<td>Rasterized glyphs at various sizes</td>
+<td>Implicit functions</td>
+<td>Not specified</td>
+<td>Not specified</td>
+<td>Not specified</td>
+<td>Custom dataset</td>
+<td>Implicit neural representation, Frequency encoding, Batch
+normalization adaptations</td>
+<td>U-Net-based, Implicit model</td>
+<td>Encoder-decoder with multiple layers, Implicit model with 5
+layers</td>
+<td>L2 pixelwise loss, Focal loss</td>
+<td>Comparison between masked MLP and implicit model</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>Diff-Font</strong></td>
+<td>2022</td>
+<td><span class="citation" data-cites="DiffFontDiffusionModel2022">[<a
+href="#ref-DiffFontDiffusionModel2022"
+role="doc-biblioref">19</a>]</span></td>
+<td>font completion</td>
+<td>Raster images of glyphs</td>
+<td>Gaussian noise representation</td>
+<td>Sequential</td>
+<td>Font glyphs</td>
+<td>Character attributes embedding (content, stroke, style)</td>
+<td>Not specified</td>
+<td>Small: 1,000 Chinese characters, Large: 3,755 Chinese
+characters</td>
+<td>Train: 80%, Test: 20%</td>
+<td>Custom dataset</td>
+<td>Diffusion model, Stroke-wise information</td>
+<td>UNet-based DDPM</td>
+<td>Multi-scale U-Net layers</td>
+<td>SSIM, RMSE, LPIPS, FID</td>
+<td>FUNIT, MX-Font, DG-Font</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>GAS-NeXt</strong></td>
+<td>2022</td>
+<td><span class="citation"
+data-cites="GASNeXtFewShotCrossLingual2022">[<a
+href="#ref-GASNeXtFewShotCrossLingual2022"
+role="doc-biblioref">20</a>]</span></td>
+<td>cross-lingual font completion</td>
+<td>Raster images and style reference images</td>
+<td>Layer attention and context-aware attention</td>
+<td>Sequential</td>
+<td>Stylized glyph images</td>
+<td>Encoded style and content features</td>
+<td>Not specified</td>
+<td>Li et al. dataset</td>
+<td>Train: 90%, Test: 10%</td>
+<td>Li et al. dataset, Azadi et al. dataset, CASIA dataset</td>
+<td>Layer attention, Context-aware attention, Local discriminator</td>
+<td>AGIS-Net and Font Translator GAN based</td>
+<td>Encoder: 6 convolutional layers, Decoder: 6 deconvolutional
+layers</td>
+<td>FID, SSIM, Pixel-level Accuracy</td>
+<td>Font Translator GAN, AGIS-Net</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>Character-Aware</strong></td>
+<td>2022</td>
+<td><span class="citation"
+data-cites="CharacterAwareModelsImprove2022">[<a
+href="#ref-CharacterAwareModelsImprove2022"
+role="doc-biblioref">37</a>]</span></td>
+<td>text rendering</td>
+<td>Text inputs (character-level and token-level)</td>
+<td>Character-aware and character-blind representations</td>
+<td>Sequential</td>
+<td>Visual text rendering in images</td>
+<td>Token and character embeddings</td>
+<td>Not specified</td>
+<td>Not specified</td>
+<td>Train: 500,000 steps, Test: Not specified</td>
+<td>Laion-400M</td>
+<td>Character-aware and character-blind text encoders, Hybrid models,
+Pretraining</td>
+<td>T5, ByT5, Concat(T5-XXL, ByT5-Small)</td>
+<td>Multiple layers (sizes not specified)</td>
+<td>OCR-based metrics (accuracy), Human ratings</td>
+<td>Imagen, Stable Diffusion, Parti</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>AdaptiFont</strong></td>
+<td>2021</td>
+<td><span class="citation"
+data-cites="AdaptiFontIncreasingIndividuals2021">[<a
+href="#ref-AdaptiFontIncreasingIndividuals2021"
+role="doc-biblioref">27</a>]</span></td>
+<td>adaptive design, reading speed optimisation</td>
+<td>Text data</td>
+<td>Non-negative matrix factorization (NMF)</td>
+<td>Generative</td>
+<td>TrueType fonts</td>
+<td>NMF basis vectors</td>
+<td>Not specified</td>
+<td>25 classic fonts</td>
+<td>7 subjects, 250 texts each</td>
+<td>Custom collected from Twitter pages of news platforms</td>
+<td>Bayesian optimization, human-in-the-loop system, generative font
+space</td>
+<td>Not specified</td>
+<td>NMF with 3 components</td>
+<td>Reading speed (words per minute), Bayesian ANOVA, Bayesian Pearson
+Correlation</td>
+<td>Traditional fonts comparison (Kolmogorov-Smirnov test)</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>SkelGAN</strong></td>
+<td>2021</td>
+<td><span class="citation" data-cites="SkelGANFontImage2021">[<a
+href="#ref-SkelGANFontImage2021"
+role="doc-biblioref">31</a>]</span></td>
+<td>style transfer, skeletonization</td>
+<td>Font images</td>
+<td>Spatial representation</td>
+<td>Sequential</td>
+<td>Skeletons of font glyphs</td>
+<td>One-pixel-width skeletons</td>
+<td>Multi-scale</td>
+<td>Custom dataset: 70,500 glyph images</td>
+<td>Train: 90%, Test: 10%</td>
+<td>Custom dataset</td>
+<td>GANs, Style classification, Character classification, Multi-scale
+feature extraction</td>
+<td>Modified U-Net</td>
+<td>14 layers (7 encoder, 7 decoder)</td>
+<td>SSIM, L1 distance</td>
+<td>Lee’s method, Pix2pix</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>RCN</strong></td>
+<td>2021</td>
+<td><span class="citation"
+data-cites="RadicalCompositionNetwork2021">[<a
+href="#ref-RadicalCompositionNetwork2021"
+role="doc-biblioref">71</a>]</span></td>
+<td>cross-modal: caption-to-font</td>
+<td>Caption text, Raster images of radicals</td>
+<td>Sequential</td>
+<td>Sequential</td>
+<td>Chinese character images</td>
+<td>Embeddings</td>
+<td>Tree-structured</td>
+<td>Printed: 114,665 characters; Handwritten: 2,674,784 characters</td>
+<td>Train: 22,933 classes, Test: 4,172 classes</td>
+<td>Custom dataset</td>
+<td>Tree-structured encoder (TRN), DenseNet, Deconvolution, Perceptual
+loss</td>
+<td>Encoder-decoder (CNN-based)</td>
+<td>Tree-structured recurrent units, Deconvolution layers</td>
+<td>L1 loss, RMSE, SSIM, LPIPS</td>
+<td>RAN, zi2zi</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>DG-Font</strong></td>
+<td>2021</td>
+<td><span class="citation"
+data-cites="DGFontDeformableGenerative2021">[<a
+href="#ref-DGFontDeformableGenerative2021"
+role="doc-biblioref">70</a>]</span></td>
+<td>font completion</td>
+<td>Raster images of glyphs</td>
+<td>Spatial representation</td>
+<td>Sequential</td>
+<td>Font glyphs</td>
+<td>Spatial features and latent vector representations</td>
+<td>Deformable</td>
+<td>Custom dataset: 410 fonts, 990 characters each</td>
+<td>Train: 400 fonts, 800 chars/font; Test: 10 fonts, 190
+chars/font</td>
+<td>Custom dataset</td>
+<td>Deformable convolution, Feature Deformation Skip Connection (FDSC),
+AdaIN</td>
+<td>CNN-based</td>
+<td>Deformable convolutions, residual blocks, multi-task
+discriminator</td>
+<td>L1 loss, RMSE, SSIM, LPIPS, FID</td>
+<td>CycleGAN, EMD, Zi2zi, GANimorph, FUNIT</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>StrokeGAN</strong></td>
+<td>2021</td>
+<td><span class="citation" data-cites="StrokeGANReducingMode2021">[<a
+href="#ref-StrokeGANReducingMode2021"
+role="doc-biblioref">74</a>]</span></td>
+<td>style transfer</td>
+<td>Glyph images</td>
+<td>Stroke encoding representation</td>
+<td>Sequential</td>
+<td>Glyph images</td>
+<td>Stroke-level encoding</td>
+<td>CycleGAN with stroke encoding</td>
+<td>9 different fonts datasets</td>
+<td>Train: 90%, Test: 10%</td>
+<td>Custom collected, CASIA-HWDB1.1, Internet</td>
+<td>Stroke encoding, CycleGAN, stroke-encoding reconstruction loss</td>
+<td>CycleGAN-based</td>
+<td>2 convolutional layers (down-sampling), 9 residual modules, 2
+deconvolutional layers (up-sampling)</td>
+<td>Content accuracy, Recognition accuracy, Stroke error</td>
+<td>CycleGAN, zi2zi, Chinese Typography Transfer (CTT)</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>LF-Font</strong></td>
+<td>2021</td>
+<td><span class="citation" data-cites="LFFontFewshotFont2021">[<a
+href="#ref-LFFontFewshotFont2021"
+role="doc-biblioref">48</a>]</span></td>
+<td>font completion</td>
+<td>Glyph images</td>
+<td>Spatial representation</td>
+<td>Sequential</td>
+<td>Glyphs</td>
+<td>Localized style representations, factorization modules</td>
+<td>Factorized component and style factors</td>
+<td>19,514 characters</td>
+<td>Train: 467 fonts, Test: 15 fonts</td>
+<td>Custom collected Chinese fonts</td>
+<td>Component-wise style encoding, content encoder, factorization
+modules</td>
+<td>CNN-based</td>
+<td>Style encoder, content encoder, generator with 4 convolutional
+layers</td>
+<td>LPIPS, Accuracy, FID, User study</td>
+<td>SA-VAE, EMD, AGIS-Net, FUNIT, DM-Font</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>FontRL</strong></td>
+<td>2021</td>
+<td><span class="citation" data-cites="FontRLChineseFont2021">[<a
+href="#ref-FontRLChineseFont2021"
+role="doc-biblioref">41</a>]</span></td>
+<td>font completion</td>
+<td>Glyph images</td>
+<td>Spatial representation</td>
+<td>Sequential</td>
+<td>Glyph images</td>
+<td>Stroke-level styles</td>
+<td>Deep reinforcement learning with TPS transformations</td>
+<td>6,763 characters in 5 styles</td>
+<td>Train: 775 characters, Test: 5 styles</td>
+<td>Custom dataset</td>
+<td>Deep reinforcement learning, TPS transformation, CNN-based image
+rendering</td>
+<td>ResNet-18, CNN-based</td>
+<td>Policy network (ResNet-18), BBoxNet (ResNet-34), StyleNet for
+rendering</td>
+<td>L1 loss, IoU, User study</td>
+<td>SCFont, zi2zi, DCFont, FontRNN, pix2pix</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>Perceptual Manifold of Fonts</strong></td>
+<td>2021</td>
+<td><span class="citation"
+data-cites="LearningPerceptualManifold2021">[<a
+href="#ref-LearningPerceptualManifold2021"
+role="doc-biblioref">69</a>]</span></td>
+<td>gont exploration, style transfer</td>
+<td>Raster images</td>
+<td>Latent space representation</td>
+<td>Sequential</td>
+<td>Glyph images</td>
+<td>Perceptual manifolds</td>
+<td>Continuous latent space</td>
+<td>Google Fonts: 2169 fonts</td>
+<td>Train: 90%, Test: 10%</td>
+<td>Google Fonts</td>
+<td>Variational Autoencoder (VAE), t-SNE for manifold learning, kernel
+density estimation</td>
+<td>VAE-based</td>
+<td>Encoder: 4 convolutional layers, Decoder: 2 convolutional
+layers</td>
+<td>SSIM, User study</td>
+<td>Comparison with traditional font exploration interfaces</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><strong>Implicit Glyph Shape</strong></td>
+<td>2021</td>
+<td><span class="citation" data-cites="LearningImplicitGlyph2021">[<a
+href="#ref-LearningImplicitGlyph2021"
+role="doc-biblioref">39</a>]</span></td>
+<td>interpolation, style transfer</td>
+<td>Raster images</td>
+<td>Implicit representation</td>
+<td>Implicit function decoding</td>
+<td>Glyph images</td>
+<td>Signed distance functions with quadratic curves</td>
+<td>Continuous 2D space</td>
+<td>26390 glyph images</td>
+<td>Train: 26390 images, Validation: dataset split</td>
+<td>Custom dataset</td>
+<td>Implicit representation, quadratic curves, disentangled encoder,
+auxiliary character classifier</td>
+<td>CNN-based, ResNet-18</td>
+<td>ResNet-18 encoder, MLP for curve parameters</td>
+<td>SSIM, LPIPS, L1 distance, User study</td>
+<td>VAE, pix2pix, AGIS-Net, FANnet</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>CycleFont</strong></td>
+<td>2021</td>
+<td><span class="citation"
+data-cites="FontCompletionManipulation2021">[<a
+href="#ref-FontCompletionManipulation2021"
+role="doc-biblioref">73</a>]</span></td>
+<td>font completion, interpolation, manipulation</td>
+<td>Raster images, SVG curves, point sets</td>
+<td>Multi-modality representation (image-to-graph-to-image)</td>
+<td>Multi-modality (graph-based)</td>
+<td>Glyph images</td>
+<td>Graph-based representation</td>
+<td>Latent space with graph representation</td>
+<td>Google Fonts: 2693 fonts, 55,554 glyphs</td>
+<td>Train: 95%, Test: 5%</td>
+<td>Google Fonts dataset</td>
+<td>Cross-modality auto-encoder, graph-based representation</td>
+<td>Graph-based, auto-encoder</td>
+<td>Image encoder (Conv2D), point set decoder, graph constructor, neural
+renderer</td>
+<td>MSE, PSNR, SSIM</td>
+<td>TCN</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>DeepVecFont</strong></td>
+<td>2021</td>
+<td><span class="citation"
+data-cites="DeepVecFontSynthesizingHighquality2021">[<a
+href="#ref-DeepVecFontSynthesizingHighquality2021"
+role="doc-biblioref">62</a>]</span></td>
+<td>font completion, interpolation</td>
+<td>Raster images, vector outlines</td>
+<td>Dual-modality representation</td>
+<td>Sequential</td>
+<td>Vector glyphs</td>
+<td>Image-aspect and sequence-aspect features</td>
+<td>Latent space with Gaussian priors</td>
+<td>8K fonts for training, 1.5K for testing</td>
+<td>Train: 8K fonts, Test: 1.5K fonts</td>
+<td>SVG-Fonts Dataset</td>
+<td>Dual-modality learning, differentiable rasterization, Mixture
+Density Network</td>
+<td>CNN-based, RNN-based</td>
+<td>Convolutional layers, LSTM layers</td>
+<td>L1 loss, Perceptual loss, Cross-Entropy loss, MDN loss</td>
+<td>SVG-VAE, DeepSVG, Im2Vec</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>ZiGAN</strong></td>
+<td>2021</td>
+<td><span class="citation" data-cites="ZiGANFinegrainedChinese2021">[<a
+href="#ref-ZiGANFinegrainedChinese2021"
+role="doc-biblioref">65</a>]</span></td>
+<td>style transfer</td>
+<td>Glyph images</td>
+<td>Spatial representation</td>
+<td>Sequential</td>
+<td>Glyphs</td>
+<td>Character-level styles</td>
+<td>Learned correlation between structures of different styles</td>
+<td>61,151 images, 6560 characters</td>
+<td>Train: 100 or 200 shots, Test: remaining images</td>
+<td>Chinese calligraphy character website</td>
+<td>GAN-based, CAM attention module, CycleGAN</td>
+<td>GAN-based</td>
+<td>Encoder: 8 convolutional layers, Decoder: 8 deconvolutional
+layers</td>
+<td>FID, IOU, Top-1 Accuracy, User study</td>
+<td>zi2zi, pix2pix, U-GAT-IT, CycleGAN, StarGAN, CalliGAN</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>Dual Latent Manifolds</strong></td>
+<td>2021</td>
+<td><span class="citation"
+data-cites="ScalableFontReconstruction2021">[<a
+href="#ref-ScalableFontReconstruction2021"
+role="doc-biblioref">54</a>]</span></td>
+<td>reconstruction</td>
+<td>Glyph images</td>
+<td>Dual latent manifolds representation</td>
+<td>Matrix factorization</td>
+<td>Glyph images</td>
+<td>Vector representations for font style and character shape</td>
+<td>Dual latent spaces with Gaussian priors</td>
+<td>Google Fonts: 2017 fonts, Chinese Simplified: 623 fonts</td>
+<td>Train: 60%, Dev: 20%, Test: 20%</td>
+<td>Google Fonts, Chinese Simplified dataset</td>
+<td>Dual manifold model, adaptive wavelet loss, U-Net architecture</td>
+<td>U-Net-based</td>
+<td>Encoder: convolutional layers, Decoder: transposed convolutional
+layers with MLP parameters</td>
+<td>SSIM, L2, Human evaluation (Amazon Mechanical Turk)</td>
+<td>EMD, Nearest Neighbor</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>CKFont</strong></td>
+<td>2021</td>
+<td><span class="citation" data-cites="CKFontFewShotKorean2021">[<a
+href="#ref-CKFontFewShotKorean2021"
+role="doc-biblioref">47</a>]</span></td>
+<td>font completion</td>
+<td>Glyph images</td>
+<td>Spatial representation</td>
+<td>Sequential</td>
+<td>Glyphs</td>
+<td>Character-level styles</td>
+<td>Pre-trained with self-supervised signals</td>
+<td>2,350 glyphs</td>
+<td>Train: 2,000, Test: 350</td>
+<td>Hangul standard code system (KS X 1001)</td>
+<td>Conditional GAN, dual encoders, style extraction from
+components</td>
+<td>GAN-based</td>
+<td>6 convolutional layers in each encoder, 6 deconvolutional layers in
+the decoder</td>
+<td>L1, L2, SSIM, FID</td>
+<td>zi2zi, SKFont</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>Neural Style Difference Transfer</strong></td>
+<td>2020</td>
+<td><span class="citation" data-cites="NeuralStyleDifference2020">[<a
+href="#ref-NeuralStyleDifference2020"
+role="doc-biblioref">3</a>]</span></td>
+<td>style transfer, interpolation, font completion</td>
+<td>Font images</td>
+<td>Convolutional Neural Network (CNN)</td>
+<td>Sequential</td>
+<td>Font images</td>
+<td>Feature maps, Gram matrices</td>
+<td>Not specified</td>
+<td>Various combinations of input fonts</td>
+<td>Not specified</td>
+<td>Not specified</td>
+<td>Neural style transfer, Style difference loss, Content difference
+loss</td>
+<td>VGGNet</td>
+<td>Multiple layers (conv1_2, conv2_2, conv3_2, conv4_2, conv5_2)</td>
+<td>Mean Squared Error (MSE)</td>
+<td>NST, GAN-based methods</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>JointFontGAN</strong></td>
+<td>2020</td>
+<td><span class="citation"
+data-cites="JointFontGANJointGeometryContent2020">[<a
+href="#ref-JointFontGANJointGeometryContent2020"
+role="doc-biblioref">67</a>]</span></td>
+<td>style transfer</td>
+<td>Gray-scale glyph images</td>
+<td>Multi-stream extended conditional GAN (XcGAN) models</td>
+<td>Two-stream generative process</td>
+<td>Glyph images</td>
+<td>Font skeletons and glyph representations</td>
+<td>Not specified</td>
+<td>20K fonts with different styles</td>
+<td>Not specified</td>
+<td>Collected datasets</td>
+<td>Two-stream GAN, few-shot learning, skeleton and content
+consistency</td>
+<td>GAN</td>
+<td>Two-stream GAN</td>
+<td>Structural similarity (SSIM), Mean Squared Error (MSE), L1 loss</td>
+<td>zi2zi, Glyph Network in MC-GAN</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>TNet</strong></td>
+<td>2020</td>
+<td><span class="citation" data-cites="TNetGANBasedUnpaired2020">[<a
+href="#ref-TNetGANBasedUnpaired2020"
+role="doc-biblioref">15</a>]</span></td>
+<td>style transfer</td>
+<td>Chinese character images</td>
+<td>Skeleton extraction, GAN-based transformation and rendering</td>
+<td>Sequential</td>
+<td>Chinese character images</td>
+<td>Skeleton and stroke style representation</td>
+<td>Not specified</td>
+<td>StdFont-4: 6,700 characters per font, Calli-5: 1,200 characters per
+style</td>
+<td>Not specified</td>
+<td>StdFont-4, Calli-5</td>
+<td>Three-stage GAN model, Skeleton extraction, Stroke rendering,
+Unpaired training data</td>
+<td>GAN-based</td>
+<td>Not specified</td>
+<td>Style Error Rate (SER), Content Error Rate (CER), Intersection over
+Union (IoU), MS Accuracy</td>
+<td>Various GAN models, Pix2Pix, CycleGAN, StarGAN</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>DM-Font</strong></td>
+<td>2020</td>
+<td><span class="citation"
+data-cites="DMFontFewShotCompositional2020">[<a
+href="#ref-DMFontFewShotCompositional2020"
+role="doc-biblioref">10</a>]</span></td>
+<td>font completion, style transfer, interpolation</td>
+<td>Images of glyphs</td>
+<td>Dual memory-augmented structure</td>
+<td>Sequential</td>
+<td>Glyph images</td>
+<td>Component-wise encoded features</td>
+<td>Fixed persistent memory, dynamic memory</td>
+<td>Korean-handwriting: 86 fonts, 2448 glyphs per font; Thai-printing:
+105 fonts</td>
+<td>Korean-handwriting: Train 80% fonts, 90% glyphs; Thai-printing:
+similar split; Korean-unrefined for validation</td>
+<td>Korean-handwriting dataset (refined by expert designer),
+Korean-unrefined dataset, Thai-printing dataset</td>
+<td>Dual memory structure, compositional generator, self-attention,
+global-context block</td>
+<td>Dual memory-augmented font generation network</td>
+<td>Encoder: multi-head structure; Decoder: hourglass block, multi-task
+discriminator</td>
+<td>SSIM, MS-SSIM, perceptual distance (PD), mean FID (mFID), human
+preference</td>
+<td>EMD, FUNIT, AGIS-Net</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>RD-GAN</strong></td>
+<td>2020</td>
+<td><span class="citation" data-cites="RDGANFewZeroShot2020">[<a
+href="#ref-RDGANFewZeroShot2020"
+role="doc-biblioref">24</a>]</span></td>
+<td>style transfer, interpolation</td>
+<td>Glyph images</td>
+<td>Radical decomposition-and-rendering-based GAN</td>
+<td>Sequential</td>
+<td>Stylized glyph images</td>
+<td>Radical embeddings, Style embeddings</td>
+<td>Not specified</td>
+<td>1473 classes with 50 samples each (D1), 5 samples each (D2), 1473
+unseen categories (D3)</td>
+<td>D1: same category in training and test, D2: 5 samples per category,
+D3: unseen categories</td>
+<td>TKH Dataset (Tripitaka paragraph images)</td>
+<td>Radical Extraction Module (REM), Radical Rendering Module (RRM),
+Multi-level Discriminator (MLD)</td>
+<td>CNN-based encoder-decoder</td>
+<td>2-layer Bi-directional LSTM (BLSTM), convolutional layers, 2D
+attention mechanism</td>
+<td>L1 loss, Root Mean Square Error (RMSE), Structural Similarity Index
+(SSIM)</td>
+<td>Pix2pix, Cycle-GAN, MC-GAN, Zi2zi, EMD</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>EmoGAN</strong></td>
+<td>2020</td>
+<td><span class="citation" data-cites="EmoGanAutomaticChinese2020">[<a
+href="#ref-EmoGanAutomaticChinese2020"
+role="doc-biblioref">12</a>]</span></td>
+<td>style transfer, interpolation, font completion</td>
+<td>Glyph images</td>
+<td>Hierarchical encoder-decoder with Emotion Guidance Module (EGM)</td>
+<td>Sequential</td>
+<td>Glyph images</td>
+<td>Emotion embeddings, Style embeddings</td>
+<td>Not specified</td>
+<td>30 fonts for training, 27 fonts for fine-tuning</td>
+<td>Train: 27 fonts (1000 chars each), Fine-tune: 6 fonts (3000 chars
+each)</td>
+<td>Questionnaire system (Tencent platform)</td>
+<td>Emotional Guidance GAN (EG-GAN), EM Distance, Gradient Penalty,
+Classification loss</td>
+<td>CNN-based encoder-decoder</td>
+<td>Multiple convolutional layers, EGM</td>
+<td>SSIM, PSNR, evaluation questionnaire</td>
+<td>Zi2Zi, EG-GAN 1 (without Gradient Penalty)</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><strong>Attribute2Font</strong></td>
+<td>2020</td>
+<td><span class="citation"
+data-cites="Attribute2FontCreatingFonts2020">[<a
+href="#ref-Attribute2FontCreatingFonts2020"
+role="doc-biblioref">61</a>]</span></td>
+<td>style transfer, interpolation, font completion, editing</td>
+<td>Glyph images</td>
+<td>Hierarchical encoder-decoder with Attribute Attention Module
+(AAM)</td>
+<td>Sequential</td>
+<td>Glyph images</td>
+<td>Attribute embeddings</td>
+<td>Not specified</td>
+<td>148 labeled fonts, 968 unlabeled fonts</td>
+<td>Train: 120 fonts, Val: 28 fonts</td>
+<td>AttrFont-ENG (O’Donovan et al., 2014)</td>
+<td>Attribute Attention Module, Semi-supervised learning, Visual Style
+Transformer</td>
+<td>CNN-based encoder-decoder</td>
+<td>16 residual blocks, 4 up-sampling layers, AAM</td>
+<td>IS, FID, LPIPS, SSIM, pixel-level accuracy (pix-acc), Hausdorff,
+Chamfer</td>
+<td>AttGAN, StarGAN, RelGAN, STGAN, O’Donovan et al., Chen et al.</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><strong>CalliGAN</strong></td>
+<td>2020</td>
+<td><span class="citation"
+data-cites="CalliGANStyleStructureaware2020">[<a
+href="#ref-CalliGANStyleStructureaware2020"
+role="doc-biblioref">66</a>]</span></td>
+<td>style transfer</td>
+<td>Grayscale images of glyphs</td>
+<td>Component-based encoder-decoder with multi-domain translation</td>
+<td>Sequential</td>
+<td>Grayscale glyphs</td>
+<td>Embedding and component encoding</td>
+<td>Not specified</td>
+<td>29 calligraphy styles, 47552 images</td>
+<td>Train: 39815 images, Test: 7737 images</td>
+<td>Constructed by authors</td>
+<td>Component-based encoder, U-Net-based generator, multi-domain
+translation</td>
+<td>GAN-based</td>
+<td>8 encoder and 8 decoder layers, Component encoder with LSTM</td>
+<td>MSE, SSIM, Human subject study</td>
+<td>zi2zi, AEGG</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>Font2Fonts</strong></td>
+<td>2020</td>
+<td><span class="citation"
+data-cites="Font2FontsModifiedImagetoImage2020">[<a
+href="#ref-Font2FontsModifiedImagetoImage2020"
+role="doc-biblioref">30</a>]</span></td>
+<td>style transfer, font completion</td>
+<td>Grayscale images of glyphs</td>
+<td>Conditional GAN with multi-domain translation</td>
+<td>Sequential</td>
+<td>Grayscale glyphs</td>
+<td>Local and global feature representation</td>
+<td>Not specified</td>
+<td>20 Korean fonts, 2,350 most commonly used Korean Hangul
+characters</td>
+<td>Train: 75% (15 fonts), Test: 25% (5 fonts)</td>
+<td>Constructed by authors</td>
+<td>Conditional GAN, Multi-domain translation, Unicode-based font
+dataset generator</td>
+<td>GAN-based</td>
+<td>7 down-sampling and 7 up-sampling layers with Instance
+Normalization</td>
+<td>L1 loss, GAN loss, Style classification loss, MAE, SSIM</td>
+<td>pix2pix</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>DeepSVG</strong></td>
+<td>2020</td>
+<td><span class="citation"
+data-cites="DeepSVGHierarchicalGenerative2020">[<a
+href="#ref-DeepSVGHierarchicalGenerative2020"
+role="doc-biblioref">9</a>]</span></td>
+<td>interpolation, animation, manipulation</td>
+<td>SVG commands</td>
+<td>Hierarchical Transformer-based architecture</td>
+<td>Non-autoregressive</td>
+<td>SVG images</td>
+<td>Discrete continuous embedding</td>
+<td>Not specified</td>
+<td>100,000 high-quality icons</td>
+<td>Train/Test split not specified</td>
+<td>SVG-Icons8, constructed by authors</td>
+<td>Hierarchical generative network, Non-autoregressive feed-forward
+model</td>
+<td>Transformer-based</td>
+<td>4 layers in encoder and decoder with 512 feed-forward dimension</td>
+<td>Chamfer distance, Reconstruction Error (RE), Interpolation
+Smoothness (IS)</td>
+<td>One-stage autoregressive, One-stage feed-forward, SVG-VAE</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>Fontender</strong></td>
+<td>2019</td>
+<td><span class="citation"
+data-cites="FontenderInteractiveJapanese2019">[<a
+href="#ref-FontenderInteractiveJapanese2019"
+role="doc-biblioref">51</a>]</span></td>
+<td>font fusion, text design</td>
+<td>Japanese font images</td>
+<td>Dynamic font fusion algorithm</td>
+<td>Not specified</td>
+<td>Blended font images</td>
+<td>Core and thickness of fonts expressed mathematically</td>
+<td>Not specified</td>
+<td>18 types of fonts evaluated by 17 participants</td>
+<td>Not specified</td>
+<td>Custom dataset (not specified)</td>
+<td>Dynamic font fusion, impression-based font selection</td>
+<td>Not specified</td>
+<td>Not specified</td>
+<td>User satisfaction (Likert scale), qualitative comparison</td>
+<td>Pull down interface, map interface without font fusion</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>Deep Factor</strong></td>
+<td>2019</td>
+<td><span class="citation" data-cites="DeepFactorizationStyle2019">[<a
+href="#ref-DeepFactorizationStyle2019"
+role="doc-biblioref">53</a>]</span></td>
+<td>reconstruction, style transfer, interpolation</td>
+<td>Grayscale glyph images (64x64)</td>
+<td>Variational Autoencoder (VAE)</td>
+<td>Transpose Convolutional Process</td>
+<td>Grayscale glyph images (64x64)</td>
+<td>Character embeddings and font latent variables</td>
+<td>Not specified</td>
+<td>10,682 fonts</td>
+<td>Train: 7,649 fonts, Dev: 1,473 fonts, Test: 1,560 fonts</td>
+<td>Capitals64 dataset</td>
+<td>Deep matrix factorization, Gaussian prior, orthonormal DCT-II
+transformation</td>
+<td>VAE</td>
+<td>Convolutional layers with transpose convolutions</td>
+<td>L2 reconstruction error, human evaluation (AMT)</td>
+<td>GlyphNet, nearest neighbors</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>Handwritten Chinese Font Generation</strong></td>
+<td>2019</td>
+<td><span class="citation" data-cites="HandwrittenChineseFont2019">[<a
+href="#ref-HandwrittenChineseFont2019"
+role="doc-biblioref">64</a>]</span></td>
+<td>style transfer</td>
+<td>64x64 grayscale pixel images of glyphs</td>
+<td>CNN with encoder-decoder and collaborative stroke refinement</td>
+<td>Not specified</td>
+<td>64x64 grayscale pixel images</td>
+<td>Not explicitly specified</td>
+<td>Not specified</td>
+<td>750 paired training samples</td>
+<td>Train: 750 paired samples</td>
+<td>Not specified</td>
+<td>Collaborative stroke refinement, online zoom-augmentation, adaptive
+pre-deformation</td>
+<td>CNN</td>
+<td>Encoder-decoder with multiple convolution layers</td>
+<td>RMSE, qualitative human evaluation, user study</td>
+<td>HAN, EMD</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>Stroke-Based Representation</strong></td>
+<td>2019</td>
+<td><span class="citation"
+data-cites="LearningStrokeBasedRepresentation2019">[<a
+href="#ref-LearningStrokeBasedRepresentation2019"
+role="doc-biblioref">5</a>]</span></td>
+<td>interpolation, font completion</td>
+<td>Glyph outlines, stroke-based representations</td>
+<td>Stroke-based geometric model, Bezier curves</td>
+<td>Not specified</td>
+<td>Vector glyphs</td>
+<td>Stroke-based template, Bezier curves</td>
+<td>PCA, EM-PCA</td>
+<td>570 fonts</td>
+<td>Not specified</td>
+<td>Online font database</td>
+<td>Stroke-based geometric model, PCA, EM-PCA</td>
+<td>VAE</td>
+<td>Two fully connected layers of sizes 256 and 10</td>
+<td>Fitting error, Interpolation quality, Qualitative analysis</td>
+<td>Campbell and Kautz [CK14], Raster-based methods</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>FontRNN</strong></td>
+<td>2019</td>
+<td><span class="citation"
+data-cites="FontRNNGeneratingLargescale2019">[<a
+href="#ref-FontRNNGeneratingLargescale2019"
+role="doc-biblioref">57</a>]</span></td>
+<td>font completion, style transfer</td>
+<td>Sequences of points, stroke skeletons</td>
+<td>Sequence-to-sequence model with monotonic attention</td>
+<td>Sequential</td>
+<td>Chinese character skeletons</td>
+<td>Sequences of points</td>
+<td>Not specified</td>
+<td>775 samples for optimal set, 2000 samples for handwriting
+trajectories</td>
+<td>Optimal set: 775 samples, Handwriting: 2000 samples</td>
+<td>Various Chinese font libraries, CASIA handwriting dataset</td>
+<td>Monotonic attention mechanism, Long Short-Term Memory (LSTM),
+Sequence style transfer</td>
+<td>RNN-based</td>
+<td>Encoder with 256 neurons, Decoder with 256 neurons</td>
+<td>DTW (Dynamic Time Warping), User study, Style classification
+accuracy, Content evaluation via VGG19</td>
+<td>pix2pix, DCFont, zi2zi, FontSL</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>SCFont</strong></td>
+<td>2019</td>
+<td><span class="citation"
+data-cites="SCFontStructureGuidedChinese2019">[<a
+href="#ref-SCFontStructureGuidedChinese2019"
+role="doc-biblioref">26</a>]</span></td>
+<td>style transfer, interpolation, font completion</td>
+<td>Glyph images</td>
+<td>Deep stacked networks with SkelNet and StyleNet</td>
+<td>Sequential</td>
+<td>Glyph images</td>
+<td>Stroke category prior, Style embeddings</td>
+<td>Not specified</td>
+<td>70 Chinese font libraries with 6763 characters each</td>
+<td>Train: 6000 characters per font, Fine-tune: 775 characters per
+font</td>
+<td>Self-collected and manually corrected strokes</td>
+<td>Skeleton transformation network (SkelNet), Style rendering network
+(StyleNet), spatial feature transformation (SFT)</td>
+<td>CNN-based</td>
+<td>Contracting and expanding layers, residual blocks, deconvolution
+layers</td>
+<td>L1 loss, IOU, user study, visual quality assessment (human
+judgement)</td>
+<td>pix2pix, DCFont, zi2zi, FontSL</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>SVG-VAE</strong></td>
+<td>2019</td>
+<td><span class="citation"
+data-cites="SVGVAELearnedRepresentation2019">[<a
+href="#ref-SVGVAELearnedRepresentation2019"
+role="doc-biblioref">42</a>]</span></td>
+<td>reconstruction, font completion</td>
+<td>SVG commands</td>
+<td>Variational Autoencoder (VAE) with convolutional encoder</td>
+<td>Autoregressive (LSTM)</td>
+<td>SVG commands</td>
+<td>Latent vector z (32-dimensional)</td>
+<td>Smooth, semantically meaningful</td>
+<td>14M font characters</td>
+<td>Train: 12.6M characters, Test: 1.4M characters</td>
+<td>Google Fonts</td>
+<td>Convolutional VAE, Autoregressive SVG decoder, Mixture Density
+Network (MDN), UMAP visualization of latent space</td>
+<td>VAE and LSTM-based</td>
+<td>Convolutional layers for encoder and decoder, 4 stacked LSTM layers
+for SVG decoder</td>
+<td>Negative log-likelihood, Variance of latent space z</td>
+<td>Qualitative assessments, Quantitative assessment using
+log-likelihood and variance</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>AGIS-Net</strong></td>
+<td>2019</td>
+<td><span class="citation" data-cites="AGISNetArtisticGlyph2019">[<a
+href="#ref-AGISNetArtisticGlyph2019"
+role="doc-biblioref">16</a>]</span></td>
+<td>style transfer, font completion</td>
+<td>Glyph images</td>
+<td>Two encoders for content and style, collaborative decoders for shape
+and texture</td>
+<td>Sequential</td>
+<td>Stylized glyph images</td>
+<td>Disentangled content and style features</td>
+<td>Not specified</td>
+<td>English: 32,046 synthetic artistic fonts, 35 professional-designed
+fonts; Chinese: 1,571,940 synthetic artistic glyphs, 256,410 glyphs from
+35 professional fonts</td>
+<td>Train: large-scale dataset for pre-training; Few-shot learning for
+fine-tuning with English (26 glyphs) and Chinese (7,326 glyphs)</td>
+<td>Azadi et al. (2018), Guo et al. (2018), Jiang et al. (2017,
+2019)</td>
+<td>Disentangled content and style, collaborative encoder-decoder
+architecture, local texture refinement loss</td>
+<td>GAN (Generative Adversarial Network)</td>
+<td>Six convolution layers and six up-convolution layers in the
+generator, three discriminators</td>
+<td>Inception Score (IS), Fréchet Inception Distance (FID), structural
+similarity (SSIM), pixel-level accuracy (pix-acc), user preference
+study</td>
+<td>MC-GAN, TET-GAN, BicycleGAN, MS-Pix2Pix</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>GlyphGAN</strong></td>
+<td>2019</td>
+<td><span class="citation"
+data-cites="GlyphGANStyleconsistentFont2019">[<a
+href="#ref-GlyphGANStyleconsistentFont2019"
+role="doc-biblioref">18</a>]</span></td>
+<td>style transfer, interpolation</td>
+<td>Glyph images</td>
+<td>Deep convolutional GAN (DCGAN) architecture</td>
+<td>Sequential</td>
+<td>Glyph images</td>
+<td>Character class vector, Style vector</td>
+<td>Not specified</td>
+<td>6,561 fonts, 26 uppercase alphabet letters</td>
+<td>Train: 90%, Test: 10% of 6,561 fonts</td>
+<td>Self-collected from various sources</td>
+<td>Wasserstein GAN (WGAN), gradient penalty, DCGAN, character class and
+style vectors</td>
+<td>DCGAN-based</td>
+<td>Fractionally strided convolutions, strided convolutions in
+discriminator</td>
+<td>Legibility (recognition accuracy), Diversity (pseudo-Hamming
+distance), Style consistency (Cs metric)</td>
+<td>DCGAN, WGAN-Clipping</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>Font Style Transfer Using Deep Learning</strong></td>
+<td>2018</td>
+<td><span class="citation" data-cites="FontStyleTransfer">[<a
+href="#ref-FontStyleTransfer" role="doc-biblioref">29</a>]</span></td>
+<td>style transfer</td>
+<td>Raster images of glyphs</td>
+<td>Convolutional and fully-connected neural networks</td>
+<td>Sequential</td>
+<td>Raster images</td>
+<td>Vector representation for output</td>
+<td>Not specified</td>
+<td>1,839 fonts</td>
+<td>Not specified</td>
+<td>Not specified</td>
+<td>Convolutional neural networks, Fully-connected neural networks,
+Generative adversarial networks (GAN), Image as function
+representation</td>
+<td>Encoder-decoder, GAN</td>
+<td>Convolutional layers, Fully-connected layers</td>
+<td>DSSIM, L1 loss</td>
+<td>Not specified</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>TypeCompGAN</strong></td>
+<td>2018</td>
+<td><span class="citation"
+data-cites="TypefaceCompletionGenerative2018">[<a
+href="#ref-TypefaceCompletionGenerative2018"
+role="doc-biblioref">49</a>]</span></td>
+<td>font completion</td>
+<td>Grayscale character images (128x128)</td>
+<td>GAN (Typeface Completion Network - TCN)</td>
+<td>Generative</td>
+<td>Grayscale character images (128x128)</td>
+<td>Typeface and content latent vectors</td>
+<td>Not specified</td>
+<td>Chinese: 137,839 images, English: 23,583 images</td>
+<td>Train: Chinese: 96,426, English: 16,495; Val: Chinese: 13,776,
+English: 2,357; Test: Chinese: 27,637, English: 4,733</td>
+<td>Collected from TTF and OTF files</td>
+<td>Multi-domain image-to-image translation, SSIM loss, adversarial
+loss, perceptual reconstruction loss</td>
+<td>ResNet-based GAN</td>
+<td>ResNet encoders, deconvolutional generator</td>
+<td>SSIM, L1 distance, classification accuracy</td>
+<td>CycleGAN, MUNIT, StarGAN</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>Learning to Draw Vector Graphics</strong></td>
+<td>2018</td>
+<td><span class="citation" data-cites="LearningDrawVector2018">[<a
+href="#ref-LearningDrawVector2018"
+role="doc-biblioref">75</a>]</span></td>
+<td>font completion</td>
+<td>SVG paths</td>
+<td>Variational Autoencoder (VAE)</td>
+<td>Sequential</td>
+<td>SVG drawings</td>
+<td>Feature vectors for SVG commands</td>
+<td>Gaussian latent space</td>
+<td>2,552 font faces, 877 font families</td>
+<td>Train: 1920 SVGs per glyph, Test: 240 SVGs per glyph, Validation:
+240 SVGs per glyph</td>
+<td>Google Fonts</td>
+<td>End-to-end pipeline, Variational Autoencoder, Bidirectional LSTM,
+GMM for pen coordinates, Feature encoding variants</td>
+<td>Variational Autoencoder</td>
+<td>Dual RNNs with LSTM cells, Layer normalization, GMM in decoder</td>
+<td>Hausdorff Distance, Visual inspection</td>
+<td>Comparison with input images and random noise</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>FontGAN</strong></td>
+<td>2018</td>
+<td><span class="citation" data-cites="FontGANCreatingNew2018">[<a
+href="#ref-FontGANCreatingNew2018"
+role="doc-biblioref">17</a>]</span></td>
+<td>style transfer, interpolation, contour completion</td>
+<td>Glyph images, stroke and shape vectors</td>
+<td>Convolutional neural networks (CNN) with manifold learning</td>
+<td>Sequential</td>
+<td>Chinese glyphs</td>
+<td>Skeleton and shape vectors</td>
+<td>Non-linear manifold (GP-LVM)</td>
+<td>72 font libraries, each with 2000 manually labeled characters</td>
+<td>Train: 72 font libraries, 2000 characters each</td>
+<td>Manually labeled font libraries</td>
+<td>GAN-based image synthesis, non-rigid point set registration,
+manifold learning</td>
+<td>CNN, GP-LVM</td>
+<td>7 convolution layers, 7 up-convolution layers</td>
+<td>Pixel-wise loss, Adversarial loss, Qualitative analysis</td>
+<td>Comparison with CK14, pix2pix</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>EasyFont</strong></td>
+<td>2018</td>
+<td><span class="citation"
+data-cites="EasyFontStyleLearningBased2018">[<a
+href="#ref-EasyFontStyleLearningBased2018"
+role="doc-biblioref">35</a>]</span></td>
+<td>style transfer, cross-modal: text-to-font, contour completion</td>
+<td>Handwritten character images</td>
+<td>Non-linear manifold with Gaussian Process Latent Variable Model
+(GP-LVM)</td>
+<td>Sequential</td>
+<td>Synthesized handwriting fonts</td>
+<td>Stroke skeleton representation</td>
+<td>Low-dimensional latent space</td>
+<td>27,533 Chinese characters for training, smaller subsets for
+testing</td>
+<td>Train: multiple subsets (639, 266, 775 characters) for style
+learning and evaluation</td>
+<td>Manually created handwriting samples</td>
+<td>Stroke extraction, non-rigid point set registration, manifold
+learning</td>
+<td>GP-LVM, neural networks</td>
+<td>Not specified</td>
+<td>MSE, R values, Turing tests</td>
+<td>Comparison with Rewrite, pix2pix, zi2zi, NN-Fonts, NN-Manifold</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><strong>zi2zi</strong></td>
+<td>2017</td>
+<td><span class="citation" data-cites="Zi2ziMasterChinese2017">[<a
+href="#ref-Zi2ziMasterChinese2017"
+role="doc-biblioref">59</a>]</span></td>
+<td>style transfer</td>
+<td>Character images</td>
+<td>Conditional generative adversarial network (cGAN)</td>
+<td>Sequential</td>
+<td>Character images</td>
+<td>Continuous embeddings</td>
+<td>Continuous latent space</td>
+<td>27 different fonts, approximately 29,000 examples</td>
+<td>Train: 29,000 examples, Fine-tune: 2,000-4,000 characters per
+font</td>
+<td>Various sources</td>
+<td>Multi-class category loss, Continuous embeddings, Conditional
+GAN</td>
+<td>Encoder-Decoder with Unet</td>
+<td>Encoder: 8 layers (Conv, CIN, ReLU), Decoder: 8 layers (ConvT, CIN,
+ReLU)</td>
+<td>Reconstruction loss, Adversarial loss, Category loss</td>
+<td>Rewrite, DCFont, FontSL</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>DCFont</strong></td>
+<td>2017</td>
+<td><span class="citation" data-cites="DCFontEndtoendDeep2017">[<a
+href="#ref-DCFontEndtoendDeep2017"
+role="doc-biblioref">25</a>]</span></td>
+<td>font completion, style transfer</td>
+<td>Handwritten character images</td>
+<td>Convolutional neural network</td>
+<td>Generative adversarial network (GAN)</td>
+<td>GB2312 font library with 6763 Chinese characters</td>
+<td>Deep font features</td>
+<td>Not specified</td>
+<td>775 human-written characters plus 5988 machine-generated
+characters</td>
+<td>Train: 775 human-written characters, Test: 5988 machine-generated
+characters</td>
+<td>Not specified</td>
+<td>Font feature reconstruction network, Font style transfer network,
+Adversarial training</td>
+<td>VGG16 and residual blocks</td>
+<td>16-layer VGG for feature extraction, 5 residual blocks for style
+transfer</td>
+<td>MSE loss for reconstruction, Adversarial loss for style
+transfer</td>
+<td>zi2zi, FontSL, Rewrite</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>(MC-GAN)</strong></td>
+<td>2017</td>
+<td><span class="citation" data-cites="MCGANMultiContentGAN2017">[<a
+href="#ref-MCGANMultiContentGAN2017"
+role="doc-biblioref">4</a>]</span></td>
+<td>font completion, style transfer</td>
+<td>Partial glyph images in various styles</td>
+<td>Stacked conditional GAN with separate networks for glyph and
+ornamentation</td>
+<td>Sequential</td>
+<td>Full glyph sets</td>
+<td>Glyph and ornamentation vectors</td>
+<td>Learned low-dimensional manifold</td>
+<td>10,000 fonts with different styles</td>
+<td>Randomly selected subsets from each font for training and
+testing</td>
+<td>Custom dataset created for the study</td>
+<td>End-to-end GAN pipeline, Conditional GANs, Ornamentation transfer
+network</td>
+<td>cGAN, ResNet</td>
+<td>Six ResNet blocks for each generator; LSGAN loss functions for
+discriminators</td>
+<td>L1 loss, LSGAN loss, Perceptual evaluation via user study</td>
+<td>Comparison with baseline glyph-outline inference network and text
+effect transfer method</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>Handwriting Fonts via Style Learning</strong></td>
+<td>2016</td>
+<td><span class="citation"
+data-cites="AutomaticGenerationLargescale2016">[<a
+href="#ref-AutomaticGenerationLargescale2016"
+role="doc-biblioref">36</a>]</span></td>
+<td>style transfer</td>
+<td>Handwritten samples, glyph images</td>
+<td>Artificial Neural Networks (ANNs)</td>
+<td>Vectorized</td>
+<td>Handwritten fonts</td>
+<td>Trajectories, stroke shape and layout differences</td>
+<td>Not specified</td>
+<td>87 billion Chinese characters in dataset; MinSet: 266 characters,
+OptSet: 775 characters</td>
+<td>Train: not specified, Test: not specified</td>
+<td>Personal handwriting samples collected through a web
+application</td>
+<td>Artificial Neural Networks (ANNs), stroke trajectory extraction,
+style learning and synthesis, Coherent Point Drift (CPD)
+registration</td>
+<td>Feed-forward Neural Network (FFNN)</td>
+<td>1 hidden layer, 40 units in input, hidden, and output layers</td>
+<td>Turing tests with 69 participants, accuracy of distinguishing
+machine-generated from original handwritings</td>
+<td>FlexyFont, FounderType, HAND, Lake et al. (2015)</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>A2Z</strong></td>
+<td>2016</td>
+<td><span class="citation" data-cites="A2ZSupervisedTransfer2016">[<a
+href="#ref-A2ZSupervisedTransfer2016"
+role="doc-biblioref">60</a>]</span></td>
+<td>style transfer, interpolation, font completion</td>
+<td>Handwritten character images</td>
+<td>Variational autoencoder (VAE)</td>
+<td>Extrapolation, generative adversarial network (GAN)</td>
+<td>62-letter fonts with known content and style</td>
+<td>Multivariate Gaussians</td>
+<td>Organized latent space, linear combinations of latent means</td>
+<td>1,839 fonts</td>
+<td>Train: 1,556 fonts, Val: 92 fonts, Test: 191 fonts</td>
+<td>openfontlibrary.org, Fonts used by [21]</td>
+<td>Extrapolation layer, SSIM cost function, Adversarial sub-networks,
+In-network and out-of-network image quality assessment</td>
+<td>Variational autoencoder (VAE)</td>
+<td>Two hidden layers with 500 nodes each, Multilayer perceptron as
+image generator</td>
+<td>Mean DSSIM, Structured similarity objective (SSIM), Negative
+similarity as decoder loss</td>
+<td>M2, Ours-SSIM, Ours-Adv</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>FlexyFont</strong></td>
+<td>2015</td>
+<td><span class="citation"
+data-cites="FlexyFontLearningTransferring2015">[<a
+href="#ref-FlexyFontLearningTransferring2015"
+role="doc-biblioref">50</a>]</span></td>
+<td>font completion, interpolation</td>
+<td>Outline-based glyphs</td>
+<td>Stroke-based representation, Part-Similarity Vector (PSV)</td>
+<td>Part assembly</td>
+<td>Complete typefaces</td>
+<td>Similarity vectors for parts</td>
+<td>Bayesian Gaussian Process Latent Variable Model (BGPLVM)</td>
+<td>88 training fonts for uppercase, 57 training fonts for
+lowercase</td>
+<td>60% training, 40% testing</td>
+<td>Public font dataset</td>
+<td>Decomposition of glyphs into semantic parts, part assembly approach,
+Bayesian Gaussian Process Latent Variable Model (BGPLVM)</td>
+<td>Generative probabilistic model</td>
+<td>BGPLVM with mixture density model</td>
+<td>Similarity between reconstructed parts and reference parts, t-test,
+visual comparison</td>
+<td>Compared with Suveeranont and Igarashi (2010)</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>Font-MF</strong></td>
+<td>2014</td>
+<td><span class="citation" data-cites="LearningManifoldFonts2014">[<a
+href="#ref-LearningManifoldFonts2014"
+role="doc-biblioref">7</a>]</span></td>
+<td>interpolation, style transfer</td>
+<td>Vector outlines of glyphs</td>
+<td>Gaussian Process Latent Variable Model (GP-LVM)</td>
+<td>Parametric</td>
+<td>Font outlines</td>
+<td>High dimensional outline vectors</td>
+<td>Low dimensional manifold (latent space)</td>
+<td>46 fonts</td>
+<td>Not specified</td>
+<td>Google Fonts</td>
+<td>Energy-based optimization, Dense character matching, Coarse-to-fine
+approach, GP-LVM</td>
+<td>Gaussian Process Latent Variable Model (GP-LVM)</td>
+<td>Not specified</td>
+<td>Qualitative visual inspection, Chamfer distance</td>
+<td>Not specified</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>Easy Chinese Handwritten Fonts</strong></td>
+<td>2011</td>
+<td><span class="citation" data-cites="EasyGenerationPersonal2011">[<a
+href="#ref-EasyGenerationPersonal2011"
+role="doc-biblioref">76</a>]</span></td>
+<td>reconstruction</td>
+<td>Handwritten character images</td>
+<td>Chinese Character Radical Composition Model</td>
+<td>Not specified</td>
+<td>Handwritten character images</td>
+<td>Not explicitly specified</td>
+<td>Not specified</td>
+<td>522 characters for input samples, 2,500 characters in the output
+set</td>
+<td>Input: 522 characters, Output: 2,500 characters</td>
+<td>Not specified</td>
+<td>Radical reuse, contour curve-based radical clustering, segmentation
+and construction of characters</td>
+<td>Not specified</td>
+<td>Not specified</td>
+<td>Qualitative comparison with original handwritten fonts</td>
+<td>Not specified</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>EFG</strong></td>
+<td>2010</td>
+<td><span class="citation"
+data-cites="ExampleBasedAutomaticFont2010">[<a
+href="#ref-ExampleBasedAutomaticFont2010"
+role="doc-biblioref">55</a>]</span></td>
+<td>font completion, style transfer</td>
+<td>Single character outline</td>
+<td>Weighted blend of outlines and skeletons</td>
+<td>Parametric</td>
+<td>Complete font set</td>
+<td>Morphable font model with blending weights</td>
+<td>Not specified</td>
+<td>32 template fonts representing various styles</td>
+<td>Not specified</td>
+<td>Not specified</td>
+<td>Skin-skeleton model, Blending weights, Gradient descent
+optimization</td>
+<td>Not specified</td>
+<td>Not specified</td>
+<td>Qualitative visual inspection, User study</td>
+<td>Not specified</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>ParamFont</strong></td>
+<td>2001</td>
+<td><span class="citation"
+data-cites="ParamFontParameterizableFonts2001">[<a
+href="#ref-ParamFontParameterizableFonts2001"
+role="doc-biblioref">22</a>]</span></td>
+<td>interpolation, style transfer</td>
+<td>Vector outlines of glyphs</td>
+<td>Shape components with global, group, and local parameters</td>
+<td>Parametric</td>
+<td>Font outlines</td>
+<td>Component-based with parameterizable geometric shapes</td>
+<td>Not specified</td>
+<td>Not specified (component-based fonts)</td>
+<td>Not specified</td>
+<td>Not specified</td>
+<td>Shape components, Parameterizable geometric shapes, Global and local
+parameters</td>
+<td>Not specified</td>
+<td>Not specified</td>
+<td>Qualitative visual inspection, Parameter variation study</td>
+<td>Not specified</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<div id="refs" class="references csl-bib-body" data-entry-spacing="0"
+role="list">
+<div id="ref-NeuralFontRendering2022" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[1] </div><div
+class="csl-right-inline">Daniel Anderson, Ariel Shamir, and Ohad Fried.
+2022. Neural <span>Font Rendering</span>. <a
+href="https://doi.org/10.48550/arXiv.2211.14802">https://doi.org/10.48550/arXiv.2211.14802</a></div>
+</div>
+<div id="ref-SVGVecFontSVGVector2022" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[2] </div><div
+class="csl-right-inline">Haruka Aoki and Kiyoharu Aizawa. 2022.
+<span>SVGVecFont</span>: <span>SVG Vector Font Generation</span> for
+<span>Chinese Characters</span> with <span>Transformer</span>. <a
+href="https://doi.org/10.48550/arXiv.2206.10329">https://doi.org/10.48550/arXiv.2206.10329</a></div>
+</div>
+<div id="ref-NeuralStyleDifference2020" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[3] </div><div
+class="csl-right-inline">Gantugs Atarsaikhan, Brian Kenji Iwana, and
+Seiichi Uchida. 2020. Neural <span>Style Difference Transfer</span> and
+<span>Its Application</span> to <span>Font Generation</span>. In
+<em>Document <span>Analysis Systems</span></em>, 2020. Springer
+International Publishing, Cham, 544–558. <a
+href="https://doi.org/10.1007/978-3-030-57058-3_38">https://doi.org/10.1007/978-3-030-57058-3_38</a></div>
+</div>
+<div id="ref-MCGANMultiContentGAN2017" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[4] </div><div
+class="csl-right-inline">Samaneh Azadi, Matthew Fisher, Vladimir Kim,
+Zhaowen Wang, Eli Shechtman, and Trevor Darrell. 2017.
+<span>MC-GAN</span>: <span>Multi-Content GAN</span> for <span>Few-Shot
+Font Style Transfer</span>. <a
+href="https://doi.org/10.48550/arXiv.1712.00516">https://doi.org/10.48550/arXiv.1712.00516</a></div>
+</div>
+<div id="ref-LearningStrokeBasedRepresentation2019" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[5] </div><div
+class="csl-right-inline">Elena Balashova, Amit H. Bermano, Vladimir G.
+Kim, Stephen DiVerdi, Aaron Hertzmann, and Thomas Funkhouser. 2019.
+Learning <span>A Stroke-Based Representation</span> for
+<span>Fonts</span>. <em>Computer Graphics Forum</em> 38, 1 (2019),
+429–442. <a
+href="https://doi.org/10.1111/cgf.13540">https://doi.org/10.1111/cgf.13540</a></div>
+</div>
+<div id="ref-StrokeStylesStrokebasedSegmentation2022" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[6] </div><div
+class="csl-right-inline">Daniel Berio, Frederic Fol Leymarie, Paul
+Asente, and Jose Echevarria. 2022. <span>StrokeStyles</span>: <span
+class="nocase">Stroke-based Segmentation</span> and
+<span>Stylization</span> of <span>Fonts</span>. <em>ACM Trans.
+Graph.</em> 41, 3 (June 2022), 1–21. <a
+href="https://doi.org/10.1145/3505246">https://doi.org/10.1145/3505246</a></div>
+</div>
+<div id="ref-LearningManifoldFonts2014" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[7] </div><div
+class="csl-right-inline">Neill D. F. Campbell and Jan Kautz. 2014.
+Learning a manifold of fonts. <em>ACM Trans. Graph.</em> 33, 4 (July
+2014), 91:1–91:11. <a
+href="https://doi.org/10.1145/2601097.2601212">https://doi.org/10.1145/2601097.2601212</a></div>
+</div>
+<div id="ref-SVGformerRepresentationLearning2023" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[8] </div><div
+class="csl-right-inline">Defu Cao, Zhaowen Wang, Jose Echevarria, and
+Yan Liu. 2023. <span>SVGformer</span>: <span>Representation
+Learning</span> for <span>Continuous Vector Graphics Using
+Transformers</span>. 2023. 10093–10102. Retrieved July 4, 2023 from <a
+href="https://openaccess.thecvf.com/content/CVPR2023/html/Cao_SVGformer_Representation_Learning_for_Continuous_Vector_Graphics_Using_Transformers_CVPR_2023_paper.html">https://openaccess.thecvf.com/content/CVPR2023/html/Cao_SVGformer_Representation_Learning_for_Continuous_Vector_Graphics_Using_Transformers_CVPR_2023_paper.html</a></div>
+</div>
+<div id="ref-DeepSVGHierarchicalGenerative2020" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[9] </div><div
+class="csl-right-inline">Alexandre Carlier, Martin Danelljan, Alexandre
+Alahi, and Radu Timofte. 2020. <span>DeepSVG</span>: <span>A
+Hierarchical Generative Network</span> for <span>Vector Graphics
+Animation</span>. <a
+href="https://doi.org/10.48550/arXiv.2007.11301">https://doi.org/10.48550/arXiv.2007.11301</a></div>
+</div>
+<div id="ref-DMFontFewShotCompositional2020" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[10] </div><div
+class="csl-right-inline">Junbum Cha, Sanghyuk Chun, Gayoung Lee, Bado
+Lee, Seonghyeon Kim, and Hwalsuk Lee. 2020. <span>DM-Font</span>:
+<span>Few-Shot Compositional Font Generation</span> with <span>Dual
+Memory</span>. In <em>Computer <span>Vision</span> – <span>ECCV</span>
+2020</em> (<em>Lecture <span>Notes</span> in <span>Computer
+Science</span></em>), 2020. Springer International Publishing, Cham,
+735–751. <a
+href="https://doi.org/10.1007/978-3-030-58529-7_43">https://doi.org/10.1007/978-3-030-58529-7_43</a></div>
+</div>
+<div id="ref-JointImplicitJointImplicit2023" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[11] </div><div
+class="csl-right-inline">Chia-Hao Chen, Ying-Tian Liu, Zhifei Zhang,
+Yuan-Chen Guo, and Song-Hai Zhang. 2023. <span>JointImplicit</span>:
+<span>Joint Implicit Neural Representation</span> for <span
+class="nocase">High-fidelity</span> and <span>Compact Vector
+Fonts</span>. In <em>2023 <span>IEEE</span>/<span>CVF International
+Conference</span> on <span>Computer Vision</span>
+(<span>ICCV</span>)</em>, October 2023. 5515–5525. <a
+href="https://doi.org/10.1109/ICCV51070.2023.00510">https://doi.org/10.1109/ICCV51070.2023.00510</a></div>
+</div>
+<div id="ref-EmoGanAutomaticChinese2020" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[12] </div><div class="csl-right-inline">Lu
+Chen, Feifei Lee, Hanqing Chen, Wei Yao, Jiawei Cai, and Qiu Chen. 2020.
+<span>EmoGan</span>: <span>Automatic Chinese Font Generation System
+Reflecting Emotions Based</span> on <span>Generative Adversarial
+Network</span>. <em>Applied Sciences</em> 10, 17, 17 (January 2020),
+5976. <a
+href="https://doi.org/10.3390/app10175976">https://doi.org/10.3390/app10175976</a></div>
+</div>
+<div id="ref-chenhaoFTransGANPyTorch2023" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[13] </div><div
+class="csl-right-inline">Chenhao. 2023. <span>FTransGAN</span> in
+<span>PyTorch</span>. Retrieved January 18, 2023 from <a
+href="https://github.com/ligoudaner377/font_translator_gan">https://github.com/ligoudaner377/font_translator_gan</a></div>
+</div>
+<div id="ref-PGMFontRepresentation2022" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[14] </div><div
+class="csl-right-inline">Junho Cho, Kyuewang Lee, and Jin Young Choi.
+2022. <span>PGM</span>: <span>Font Representation Learning</span> via
+<span class="nocase">Paired-glyph Matching</span>. <a
+href="https://doi.org/10.48550/arXiv.2211.10967">https://doi.org/10.48550/arXiv.2211.10967</a></div>
+</div>
+<div id="ref-TNetGANBasedUnpaired2020" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[15] </div><div
+class="csl-right-inline">Yiming Gao and Jiangqin Wu. 2020.
+<span>TNet</span>: <span>GAN-Based Unpaired Chinese Character Image
+Translation</span> via <span>Skeleton Transformation</span> and
+<span>Stroke Rendering</span>. <em>Proceedings of the AAAI Conference on
+Artificial Intelligence</em> 34, 01, 01 (April 2020), 646–653. <a
+href="https://doi.org/10.1609/aaai.v34i01.5405">https://doi.org/10.1609/aaai.v34i01.5405</a></div>
+</div>
+<div id="ref-AGISNetArtisticGlyph2019" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[16] </div><div
+class="csl-right-inline">Yue Gao, Yuan Guo, Zhouhui Lian, Yingmin Tang,
+and Jianguo Xiao. 2019. <span>AGIS-Net</span>: <span>Artistic</span>
+glyph image synthesis via one-stage few-shot learning. <em>ACM Trans.
+Graph.</em> 38, 6 (November 2019), 185:1–185:12. <a
+href="https://doi.org/10.1145/3355089.3356574">https://doi.org/10.1145/3355089.3356574</a></div>
+</div>
+<div id="ref-FontGANCreatingNew2018" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[17] </div><div
+class="csl-right-inline">Yuan Guo, Zhouhui Lian, Yingmin Tang, and
+Jianguo Xiao. 2018. <span>FontGAN</span>: <span>Creating New Chinese
+Fonts</span> based on <span>Manifold Learning</span> and
+<span>Adversarial Networks</span>. <em>EG 2018 - Short Papers</em>
+(2018), 4 pages. <a
+href="https://doi.org/10.2312/EGS.20181045">https://doi.org/10.2312/EGS.20181045</a></div>
+</div>
+<div id="ref-GlyphGANStyleconsistentFont2019" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[18] </div><div
+class="csl-right-inline">Hideaki Hayashi, Kohtaro Abe, and Seiichi
+Uchida. 2019. <span>GlyphGAN</span>: <span
+class="nocase">Style-consistent</span> font generation based on
+generative adversarial networks. <em>Knowledge-Based Systems</em> 186,
+(December 2019), 104927. <a
+href="https://doi.org/10.1016/j.knosys.2019.104927">https://doi.org/10.1016/j.knosys.2019.104927</a></div>
+</div>
+<div id="ref-DiffFontDiffusionModel2022" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[19] </div><div
+class="csl-right-inline">Haibin He, Xinyuan Chen, Chaoyue Wang, Juhua
+Liu, Bo Du, Dacheng Tao, and Yu Qiao. 2022. Diff-<span>Font</span>:
+<span>Diffusion Model</span> for <span>Robust One-Shot Font
+Generation</span>. <a
+href="https://doi.org/10.48550/arXiv.2212.05895">https://doi.org/10.48550/arXiv.2212.05895</a></div>
+</div>
+<div id="ref-GASNeXtFewShotCrossLingual2022" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[20] </div><div
+class="csl-right-inline">Haoyang He, Xin Jin, and Angela Chen. 2022.
+<span>GAS-NeXt</span>: <span>Few-Shot Cross-Lingual Font
+Generator</span>. <a
+href="https://doi.org/10.48550/arXiv.2212.02886">https://doi.org/10.48550/arXiv.2212.02886</a></div>
+</div>
+<div id="ref-DSFontFewshotFont2023" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[21] </div><div
+class="csl-right-inline">Xiao He, Mingrui Zhu, Nannan Wang, Xinbo Gao,
+and Heng Yang. 2023. <span>DS-Font</span>: <span class="nocase">Few-shot
+Font Generation</span> by <span>Learning Style Difference</span> and
+<span>Similarity</span>. January 24, 2023. Retrieved January 27, 2023
+from <a
+href="https://www.semanticscholar.org/paper/Few-shot-Font-Generation-by-Learning-Style-and-He-Zhu/abcc2852b9735b887d45593adfaea54ae294f0c5?utm_source=alert_email&amp;utm_content=LibraryFolder&amp;utm_campaign=AlertEmails_DAILY&amp;utm_term=LibraryFolder&amp;email_index=0-0-0&amp;utm_medium=11135955">https://www.semanticscholar.org/paper/Few-shot-Font-Generation-by-Learning-Style-and-He-Zhu/abcc2852b9735b887d45593adfaea54ae294f0c5?utm_source=alert_email&amp;utm_content=LibraryFolder&amp;utm_campaign=AlertEmails_DAILY&amp;utm_term=LibraryFolder&amp;email_index=0-0-0&amp;utm_medium=11135955</a></div>
+</div>
+<div id="ref-ParamFontParameterizableFonts2001" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[22] </div><div
+class="csl-right-inline">Changyuan Hu and R. D. Hersch. 2001.
+<span>ParamFont</span>: <span>Parameterizable</span> fonts based on
+shape components. <em>IEEE Computer Graphics and Applications</em> 21, 3
+(May 2001), 70–85. <a
+href="https://doi.org/10.1109/38.920629">https://doi.org/10.1109/38.920629</a></div>
+</div>
+<div id="ref-GenTextUnsupervisedArtistic2022" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[23] </div><div
+class="csl-right-inline">Qirui Huang, Bin Fu, Aozhong Zhang, and Yu
+Qiao. 2022. <span>GenText</span>: <span>Unsupervised Artistic Text
+Generation</span> via <span>Decoupled Font</span> and <span>Texture
+Manipulation</span>. <a
+href="https://doi.org/10.48550/arXiv.2207.09649">https://doi.org/10.48550/arXiv.2207.09649</a></div>
+</div>
+<div id="ref-RDGANFewZeroShot2020" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[24] </div><div
+class="csl-right-inline">Yaoxiong Huang, Mengchao He, Lianwen Jin, and
+Yongpan Wang. 2020. <span>RD-GAN</span>:
+<span>Few</span>/<span>Zero-Shot Chinese Character Style Transfer</span>
+via <span>Radical Decomposition</span> and <span>Rendering</span>. In
+<em>Computer <span>Vision</span> – <span>ECCV</span> 2020</em>
+(<em>Lecture <span>Notes</span> in <span>Computer Science</span></em>),
+2020. Springer International Publishing, Cham, 156–172. <a
+href="https://doi.org/10.1007/978-3-030-58539-6_10">https://doi.org/10.1007/978-3-030-58539-6_10</a></div>
+</div>
+<div id="ref-DCFontEndtoendDeep2017" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[25] </div><div
+class="csl-right-inline">Yue Jiang, Zhouhui Lian, Yingmin Tang, and
+Jianguo Xiao. 2017. <span>DCFont</span>: An end-to-end deep chinese font
+generation system. In <em><span>SIGGRAPH Asia</span> 2017
+<span>Technical Briefs</span></em> (<em><span>SA</span> ’17</em>),
+November 27, 2017. Association for Computing Machinery, New York, NY,
+USA, 1–4. <a
+href="https://doi.org/10.1145/3145749.3149440">https://doi.org/10.1145/3145749.3149440</a></div>
+</div>
+<div id="ref-SCFontStructureGuidedChinese2019" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[26] </div><div
+class="csl-right-inline">Yue Jiang, Zhouhui Lian, Yingmin Tang, and
+Jianguo Xiao. 2019. <span>SCFont</span>: <span>Structure-Guided Chinese
+Font Generation</span> via <span>Deep Stacked Networks</span>.
+<em>Proceedings of the AAAI Conference on Artificial Intelligence</em>
+33, 01, 01 (July 2019), 4015–4022. <a
+href="https://doi.org/10.1609/aaai.v33i01.33014015">https://doi.org/10.1609/aaai.v33i01.33014015</a></div>
+</div>
+<div id="ref-AdaptiFontIncreasingIndividuals2021" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[27] </div><div
+class="csl-right-inline">Florian Kadner, Yannik Keller, and Constantin
+Rothkopf. 2021. <span>AdaptiFont</span>: <span>Increasing
+Individuals</span>’ <span>Reading Speed</span> with a <span>Generative
+Font Model</span> and <span>Bayesian Optimization</span>. In
+<em>Proceedings of the 2021 <span>CHI Conference</span> on <span>Human
+Factors</span> in <span>Computing Systems</span></em>
+(<em><span>CHI</span> ’21</em>), May 07, 2021. Association for Computing
+Machinery, New York, NY, USA, 1–11. <a
+href="https://doi.org/10.1145/3411764.3445140">https://doi.org/10.1145/3411764.3445140</a></div>
+</div>
+<div id="ref-SharedLatentSpace2022" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[28] </div><div
+class="csl-right-inline">Jihun Kang, Daichi Haraguchi, Seiya Matsuda,
+Akisato Kimura, and Seiichi Uchida. 2022. Shared <span>Latent
+Space</span> of <span>Font Shapes</span> and <span>Their Noisy
+Impressions</span>. In <em><span>MultiMedia Modeling</span></em>
+(<em>Lecture <span>Notes</span> in <span>Computer Science</span></em>),
+2022. Springer International Publishing, Cham, 146–157. <a
+href="https://doi.org/10.1007/978-3-030-98355-0_13">https://doi.org/10.1007/978-3-030-98355-0_13</a></div>
+</div>
+<div id="ref-FontStyleTransfer" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[29] </div><div
+class="csl-right-inline">Antanas Kascenas. Font <span>Style Transfer
+Using Deep Learning</span>. </div>
+</div>
+<div id="ref-Font2FontsModifiedImagetoImage2020" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[30] </div><div
+class="csl-right-inline">Debbie Honghee Ko, Ammar Ul Hassan Muhammad,
+Saima Majeed, and Jaeyoung Choi. 2020. <span>Font2Fonts</span>:
+<span>A</span> modified <span class="nocase">Image-to-Image</span>
+translation framework for font generation. In <em>The 9th
+<span>International Conference</span> on <span>Smart Media</span> and
+<span>Applications</span></em>, September 17, 2020. ACM, Jeju Republic
+of Korea, 288–294. <a
+href="https://doi.org/10.1145/3426020.3426094">https://doi.org/10.1145/3426020.3426094</a></div>
+</div>
+<div id="ref-SkelGANFontImage2021" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[31] </div><div
+class="csl-right-inline">Debbie Honghee Ko, Ammar Ul Hassan Muhammad,
+Saima Majeed, and Jaeyoung Choi. 2021. <span>SkelGAN</span>: <span>A
+Font Image Skeletonization Method</span>. <em>Journal of Information
+Processing Systems</em> 17, 1 (2021), 1–13. <a
+href="https://doi.org/10.3745/JIPS.02.0152">https://doi.org/10.3745/JIPS.02.0152</a></div>
+</div>
+<div id="ref-FontStyleInterpolation2024" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[32] </div><div
+class="csl-right-inline">Tetta Kondo, Shumpei Takezaki, Daichi
+Haraguchi, and Seiichi Uchida. 2024. Font <span>Style
+Interpolation</span> with <span>Diffusion Models</span>. <a
+href="https://doi.org/10.48550/arXiv.2402.14311">https://doi.org/10.48550/arXiv.2402.14311</a></div>
+</div>
+<div id="ref-ArbitraryFontGeneration2022" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[33] </div><div
+class="csl-right-inline">Jeong-Sik Lee, Rock-Hyun Baek, and Hyun-Chul
+Choi. 2022. Arbitrary <span>Font Generation</span> by <span>Encoder
+Learning</span> of <span>Disentangled Features</span>. <em>Sensors</em>
+22, 6, 6 (January 2022), 2374. <a
+href="https://doi.org/10.3390/s22062374">https://doi.org/10.3390/s22062374</a></div>
+</div>
+<div id="ref-CVFontSynthesizingChinese2022" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[34] </div><div
+class="csl-right-inline">Zhouhui Lian and Yichen Gao. 2022.
+<span>CVFont</span>: <span>Synthesizing Chinese Vector Fonts</span> via
+<span>Deep Layout Inferring</span>. (2022). <a
+href="https://doi.org/10.1111/cgf.14580">https://doi.org/10.1111/cgf.14580</a></div>
+</div>
+<div id="ref-EasyFontStyleLearningBased2018" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[35] </div><div
+class="csl-right-inline">Zhouhui Lian, Bo Zhao, Xudong Chen, and Jianguo
+Xiao. 2018. <span>EasyFont</span>: <span>A Style Learning-Based
+System</span> to <span>Easily Build Your Large-Scale Handwriting
+Fonts</span>. <em>ACM Trans. Graph.</em> 38, 1 (December 2018),
+6:1–6:18. <a
+href="https://doi.org/10.1145/3213767">https://doi.org/10.1145/3213767</a></div>
+</div>
+<div id="ref-AutomaticGenerationLargescale2016" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[36] </div><div
+class="csl-right-inline">Zhouhui Lian, Bo Zhao, and Jianguo Xiao. 2016.
+Automatic generation of large-scale handwriting fonts via style
+learning. In <em><span>SIGGRAPH ASIA</span> 2016 <span>Technical
+Briefs</span></em> (<em><span>SA</span> ’16</em>), November 28, 2016.
+Association for Computing Machinery, New York, NY, USA, 1–4. <a
+href="https://doi.org/10.1145/3005358.3005371">https://doi.org/10.1145/3005358.3005371</a></div>
+</div>
+<div id="ref-CharacterAwareModelsImprove2022" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[37] </div><div
+class="csl-right-inline">Rosanne Liu, Dan Garrette, Chitwan Saharia,
+William Chan, Adam Roberts, Sharan Narang, Irina Blok, R. J. Mical,
+Mohammad Norouzi, and Noah Constant. 2022. Character-<span>Aware Models
+Improve Visual Text Rendering</span>. <a
+href="https://doi.org/10.48550/arXiv.2212.10562">https://doi.org/10.48550/arXiv.2212.10562</a></div>
+</div>
+<div id="ref-XMPFontSelfSupervisedCrossModality2022" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[38] </div><div
+class="csl-right-inline">Wei Liu, Fangyue Liu, Fei Ding, Qian He, and
+Zili Yi. 2022. <span>XMP-Font</span>: <span>Self-Supervised
+Cross-Modality Pre-Training</span> for <span>Few-Shot Font
+Generation</span>. 2022. 7905–7914. Retrieved December 27, 2022 from <a
+href="https://openaccess.thecvf.com//content/CVPR2022/html/Liu_XMP-Font_Self-Supervised_Cross-Modality_Pre-Training_for_Few-Shot_Font_Generation_CVPR_2022_paper.html">https://openaccess.thecvf.com//content/CVPR2022/html/Liu_XMP-Font_Self-Supervised_Cross-Modality_Pre-Training_for_Few-Shot_Font_Generation_CVPR_2022_paper.html</a></div>
+</div>
+<div id="ref-LearningImplicitGlyph2021" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[39] </div><div
+class="csl-right-inline">Ying-Tian Liu, Yuan-Chen Guo, Yi-Xiao Li, Chen
+Wang, and Song-Hai Zhang. 2021. Learning <span>Implicit Glyph Shape
+Representation</span>. <a
+href="https://doi.org/10.48550/arXiv.2106.08573">https://doi.org/10.48550/arXiv.2106.08573</a></div>
+</div>
+<div id="ref-DualVectorUnsupervisedVector2023" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[40] </div><div
+class="csl-right-inline">Ying-Tian Liu, Zhifei Zhang, Yuan-Chen Guo,
+Matthew Fisher, Zhaowen Wang, and Song-Hai Zhang. 2023.
+<span>DualVector</span>: <span>Unsupervised Vector Font Synthesis</span>
+with <span>Dual-Part Representation</span>. Retrieved May 20, 2023 from
+<a
+href="http://arxiv.org/abs/2305.10462">http://arxiv.org/abs/2305.10462</a></div>
+</div>
+<div id="ref-FontRLChineseFont2021" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[41] </div><div
+class="csl-right-inline">Yitian Liu and Zhouhui Lian. 2021.
+<span>FontRL</span>: <span>Chinese Font Synthesis</span> via <span>Deep
+Reinforcement Learning</span>. <em>Proceedings of the AAAI Conference on
+Artificial Intelligence</em> 35, 3, 3 (May 2021), 2198–2206. <a
+href="https://doi.org/10.1609/aaai.v35i3.16318">https://doi.org/10.1609/aaai.v35i3.16318</a></div>
+</div>
+<div id="ref-SVGVAELearnedRepresentation2019" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[42] </div><div
+class="csl-right-inline">Raphael Gontijo Lopes, David Ha, Douglas Eck,
+and Jonathon Shlens. 2019. <span>SVG-VAE</span>: <span>A Learned
+Representation</span> for <span>Scalable Vector Graphics</span>. In
+<em>2019 <span>IEEE</span>/<span>CVF International Conference</span> on
+<span>Computer Vision</span> (<span>ICCV</span>)</em>, October 2019.
+7929–7938. <a
+href="https://doi.org/10.1109/ICCV.2019.00802">https://doi.org/10.1109/ICCV.2019.00802</a></div>
+</div>
+<div id="ref-FontGenerationMissing2022" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[43] </div><div
+class="csl-right-inline">Seiya Matsuda, Akisato Kimura, and Seiichi
+Uchida. 2022. Font <span>Generation</span> with <span>Missing Impression
+Labels</span>. <a
+href="https://doi.org/10.48550/arXiv.2203.10348">https://doi.org/10.48550/arXiv.2203.10348</a></div>
+</div>
+<div id="ref-FontNetClosingGap2022" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[44] </div><div
+class="csl-right-inline">Ammar Ul Hassan Muhammad and Jaeyoung Choi.
+2022. <span>FontNet</span>: <span>Closing</span> the gap to font
+designer performance in font synthesis. <a
+href="https://doi.org/10.48550/arXiv.2205.06512">https://doi.org/10.48550/arXiv.2205.06512</a></div>
+</div>
+<div id="ref-ContourCompletionTransformers2023" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[45] </div><div
+class="csl-right-inline">Yusuke Nagata, Brian Kenji Iwana, and Seiichi
+Uchida. 2023. Contour <span>Completion</span> by
+<span>Transformers</span> and <span>Its Application</span> to
+<span>Vector Font Data</span>. <a
+href="https://doi.org/10.48550/arXiv.2304.13988">https://doi.org/10.48550/arXiv.2304.13988</a></div>
+</div>
+<div id="ref-VQFontFewShot2023" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[46] </div><div
+class="csl-right-inline">Wei Pan, Anna Zhu, Xinyu Zhou, Brian Kenji
+Iwana, and Shilin Li. 2023. <span>VQ-Font</span>: <span>Few</span> shot
+font generation via transferring similarity guided global style and
+quantization local style. Retrieved October 26, 2023 from <a
+href="http://arxiv.org/abs/2309.00827">http://arxiv.org/abs/2309.00827</a></div>
+</div>
+<div id="ref-CKFontFewShotKorean2021" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[47] </div><div
+class="csl-right-inline">Jangkyoung Park, Ammar Ul Hassan Muhammad, and
+Jaeyoung Choi. 2021. CKFont: Few-Shot Korean Font Generation based on
+Hangul Composability. <em>KIPS Transactions on Software and Data
+Engineering</em> 10, 11 (November 2021), 473–482. <a
+href="https://doi.org/10.3745/KTSDE.2021.10.11.473">https://doi.org/10.3745/KTSDE.2021.10.11.473</a></div>
+</div>
+<div id="ref-LFFontFewshotFont2021" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[48] </div><div
+class="csl-right-inline">Song Park, Sanghyuk Chun, Junbum Cha, Bado Lee,
+and Hyunjung Shim. 2021. <span>LF-Font</span>: <span
+class="nocase">Few-shot Font Generation</span> with <span>Localized
+Style Representations</span> and <span>Factorization</span>.
+<em>Proceedings of the AAAI Conference on Artificial Intelligence</em>
+35, 3, 3 (May 2021), 2393–2402. <a
+href="https://doi.org/10.1609/aaai.v35i3.16340">https://doi.org/10.1609/aaai.v35i3.16340</a></div>
+</div>
+<div id="ref-TypefaceCompletionGenerative2018" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[49] </div><div
+class="csl-right-inline">Yonggyu Park, Junhyun Lee, Yookyung Koh, Inyeop
+Lee, Jinhyuk Lee, and Jaewoo Kang. 2018. Typeface
+<span>Completion</span> with <span>Generative Adversarial
+Networks</span>. <a
+href="https://doi.org/10.48550/arXiv.1811.03762">https://doi.org/10.48550/arXiv.1811.03762</a></div>
+</div>
+<div id="ref-FlexyFontLearningTransferring2015" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[50] </div><div class="csl-right-inline">H.
+Q. Phan, H. Fu, and A. B. Chan. 2015. <span>FlexyFont</span>:
+<span>Learning Transferring Rules</span> for <span>Flexible Typeface
+Synthesis</span>. <em>Computer Graphics Forum</em> 34, 7 (October 2015),
+245–256. <a
+href="https://doi.org/10.1111/cgf.12763">https://doi.org/10.1111/cgf.12763</a></div>
+</div>
+<div id="ref-FontenderInteractiveJapanese2019" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[51] </div><div
+class="csl-right-inline">Junki Saito and Satoshi Nakamura. 2019.
+Fontender: <span>Interactive Japanese Text Design</span> with
+<span>Dynamic Font Fusion Method</span> for <span>Comics</span>. In
+<em><span>MultiMedia Modeling</span></em>, 2019. Springer International
+Publishing, Cham, 554–559. <a
+href="https://doi.org/10.1007/978-3-030-05716-9_45">https://doi.org/10.1007/978-3-030-05716-9_45</a></div>
+</div>
+<div id="ref-DiverseConsistentTypography2023" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[52] </div><div
+class="csl-right-inline">Wataru Shimoda, Daichi Haraguchi, Seiichi
+Uchida, and Kota Yamaguchi. 2023. Towards <span>Diverse</span> and
+<span>Consistent Typography Generation</span>. Retrieved October 26,
+2023 from <a
+href="http://arxiv.org/abs/2309.02099">http://arxiv.org/abs/2309.02099</a></div>
+</div>
+<div id="ref-DeepFactorizationStyle2019" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[53] </div><div
+class="csl-right-inline">Nikita Srivatsan, Jonathan Barron, Dan Klein,
+and Taylor Berg-Kirkpatrick. 2019. A <span>Deep Factorization</span> of
+<span>Style</span> and <span>Structure</span> in <span>Fonts</span>. In
+<em>Proceedings of the 2019 <span>Conference</span> on <span>Empirical
+Methods</span> in <span>Natural Language Processing</span> and the 9th
+<span>International Joint Conference</span> on <span>Natural Language
+Processing</span> (<span>EMNLP-IJCNLP</span>)</em>, November 2019.
+Association for Computational Linguistics, Hong Kong, China, 2195–2205.
+<a
+href="https://doi.org/10.18653/v1/D19-1225">https://doi.org/10.18653/v1/D19-1225</a></div>
+</div>
+<div id="ref-ScalableFontReconstruction2021" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[54] </div><div
+class="csl-right-inline">Nikita Srivatsan, Si Wu, Jonathan Barron, and
+Taylor Berg-Kirkpatrick. 2021. Scalable <span>Font Reconstruction</span>
+with <span>Dual Latent Manifolds</span>. In <em>Proceedings of the 2021
+<span>Conference</span> on <span>Empirical Methods</span> in
+<span>Natural Language Processing</span></em>, November 2021.
+Association for Computational Linguistics, Online; Punta Cana, Dominican
+Republic, 3060–3072. <a
+href="https://doi.org/10.18653/v1/2021.emnlp-main.244">https://doi.org/10.18653/v1/2021.emnlp-main.244</a></div>
+</div>
+<div id="ref-ExampleBasedAutomaticFont2010" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[55] </div><div
+class="csl-right-inline">Rapee Suveeranont and Takeo Igarashi. 2010.
+Example-<span>Based Automatic Font Generation</span>. In <em>Smart
+<span>Graphics</span></em> (<em>Lecture <span>Notes</span> in
+<span>Computer Science</span></em>), 2010. Springer, Berlin, Heidelberg,
+127–138. <a
+href="https://doi.org/10.1007/978-3-642-13544-6_12">https://doi.org/10.1007/978-3-642-13544-6_12</a></div>
+</div>
+<div id="ref-FSFontFewShotFont2022" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[56] </div><div
+class="csl-right-inline">Licheng Tang, Yiyang Cai, Jiaming Liu, Zhibin
+Hong, Mingming Gong, Minhu Fan, Junyu Han, Jingtuo Liu, Errui Ding, and
+Jingdong Wang. 2022. <span>FS-Font</span>: <span>Few-Shot Font
+Generation</span> by <span>Learning Fine-Grained Local Styles</span>. <a
+href="https://doi.org/10.48550/arXiv.2205.09965">https://doi.org/10.48550/arXiv.2205.09965</a></div>
+</div>
+<div id="ref-FontRNNGeneratingLargescale2019" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[57] </div><div
+class="csl-right-inline">Shusen Tang, Zeqing Xia, Zhouhui Lian, Yingmin
+Tang, and Jianguo Xiao. 2019. <span>FontRNN</span>: <span
+class="nocase">Generating Large-scale Chinese Fonts</span> via
+<span>Recurrent Neural Network</span>. <em>Computer Graphics Forum</em>
+38, 7 (2019), 567–577. <a
+href="https://doi.org/10.1111/cgf.13861">https://doi.org/10.1111/cgf.13861</a></div>
+</div>
+<div id="ref-VecFusionVectorFont2023" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[58] </div><div
+class="csl-right-inline">Vikas Thamizharasan, Difan Liu, Shantanu
+Agarwal, Matthew Fisher, Michael Gharbi, Oliver Wang, Alec Jacobson, and
+Evangelos Kalogerakis. 2023. <span>VecFusion</span>: <span>Vector Font
+Generation</span> with <span>Diffusion</span>. Retrieved December 21,
+2023 from <a
+href="http://arxiv.org/abs/2312.10540">http://arxiv.org/abs/2312.10540</a></div>
+</div>
+<div id="ref-Zi2ziMasterChinese2017" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[59] </div><div
+class="csl-right-inline">Yuchent Tian. 2017. Zi2zi: <span>Master Chinese
+Calligraphy</span> with <span>Conditional Adversarial Networks</span>.
+Retrieved December 16, 2022 from <a
+href="https://kaonashi-tyc.github.io/2017/04/06/zi2zi.html">https://kaonashi-tyc.github.io/2017/04/06/zi2zi.html</a></div>
+</div>
+<div id="ref-A2ZSupervisedTransfer2016" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[60] </div><div
+class="csl-right-inline">Paul Upchurch, Noah Snavely, and Kavita Bala.
+2016. <span>A2Z</span>: <span>From A</span> to <span>Z</span>:
+<span>Supervised Transfer</span> of <span>Style</span> and <span>Content
+Using Deep Neural Network Generators</span>. <a
+href="https://doi.org/10.48550/arXiv.1603.02003">https://doi.org/10.48550/arXiv.1603.02003</a></div>
+</div>
+<div id="ref-Attribute2FontCreatingFonts2020" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[61] </div><div
+class="csl-right-inline">Yizhi Wang, Yue Gao, and Zhouhui Lian. 2020.
+<span>Attribute2Font</span>: <span>Creating Fonts You Want From
+Attributes</span>. <a
+href="https://doi.org/10.48550/arXiv.2005.07865">https://doi.org/10.48550/arXiv.2005.07865</a></div>
+</div>
+<div id="ref-DeepVecFontSynthesizingHighquality2021" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[62] </div><div
+class="csl-right-inline">Yizhi Wang and Zhouhui Lian. 2021.
+<span>DeepVecFont</span>: <span class="nocase">Synthesizing High-quality
+Vector Fonts</span> via <span class="nocase">Dual-modality
+Learning</span>. <a
+href="https://doi.org/10.48550/arXiv.2110.06688">https://doi.org/10.48550/arXiv.2110.06688</a></div>
+</div>
+<div id="ref-DeepVecFontv2ExploitingTransformers2023" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[63] </div><div
+class="csl-right-inline">Yuqing Wang, Yizhi Wang, Longhui Yu, Yuesheng
+Zhu, and Zhouhui Lian. 2023. <span class="nocase">DeepVecFont-v2</span>:
+<span>Exploiting Transformers</span> to <span>Synthesize Vector
+Fonts</span> with <span>Higher Quality</span>. <a
+href="https://doi.org/10.48550/arXiv.2303.14585">https://doi.org/10.48550/arXiv.2303.14585</a></div>
+</div>
+<div id="ref-HandwrittenChineseFont2019" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[64] </div><div
+class="csl-right-inline">Chuan Wen, Jie Chang, Ya Zhang, Siheng Chen,
+Yanfeng Wang, Mei Han, and Qi Tian. 2019. Handwritten <span>Chinese Font
+Generation</span> with <span>Collaborative Stroke Refinement</span>. <a
+href="https://doi.org/10.48550/arXiv.1904.13268">https://doi.org/10.48550/arXiv.1904.13268</a></div>
+</div>
+<div id="ref-ZiGANFinegrainedChinese2021" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[65] </div><div class="csl-right-inline">Qi
+Wen, Shuang Li, Bingfeng Han, and Yi Yuan. 2021. <span>ZiGAN</span>:
+<span class="nocase">Fine-grained Chinese Calligraphy Font
+Generation</span> via a <span class="nocase">Few-shot Style Transfer
+Approach</span>. In <em>Proceedings of the 29th <span>ACM International
+Conference</span> on <span>Multimedia</span></em> (<em><span>MM</span>
+’21</em>), October 17, 2021. Association for Computing Machinery, New
+York, NY, USA, 621–629. <a
+href="https://doi.org/10.1145/3474085.3475225">https://doi.org/10.1145/3474085.3475225</a></div>
+</div>
+<div id="ref-CalliGANStyleStructureaware2020" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[66] </div><div
+class="csl-right-inline">Shan-Jean Wu, Chih-Yuan Yang, and Jane Yung-jen
+Hsu. 2020. <span>CalliGAN</span>: <span>Style</span> and <span
+class="nocase">Structure-aware Chinese Calligraphy Character
+Generator</span>. <a
+href="https://doi.org/10.48550/arXiv.2005.12500">https://doi.org/10.48550/arXiv.2005.12500</a></div>
+</div>
+<div id="ref-JointFontGANJointGeometryContent2020" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[67] </div><div
+class="csl-right-inline">Yankun Xi, Guoli Yan, Jing Hua, and Zichun
+Zhong. 2020. <span>JointFontGAN</span>: <span>Joint Geometry-Content
+GAN</span> for <span>Font Generation</span> via <span>Few-Shot
+Learning</span>. In <em>Proceedings of the 28th <span>ACM International
+Conference</span> on <span>Multimedia</span></em> (<em><span>MM</span>
+’20</em>), October 12, 2020. Association for Computing Machinery, New
+York, NY, USA, 4309–4317. <a
+href="https://doi.org/10.1145/3394171.3413705">https://doi.org/10.1145/3394171.3413705</a></div>
+</div>
+<div id="ref-VecFontSDFLearningReconstruct2023" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[68] </div><div
+class="csl-right-inline">Zeqing Xia, Bojun Xiong, and Zhouhui Lian.
+2023. <span>VecFontSDF</span>: <span>Learning</span> to
+<span>Reconstruct</span> and <span class="nocase">Synthesize
+High-quality Vector Fonts</span> via <span>Signed Distance
+Functions</span>. <a
+href="https://doi.org/10.48550/arXiv.2303.12675">https://doi.org/10.48550/arXiv.2303.12675</a></div>
+</div>
+<div id="ref-LearningPerceptualManifold2021" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[69] </div><div
+class="csl-right-inline">Haoran Xie, Yuki Fujita, and Kazunori Miyata.
+2021. Learning <span>Perceptual Manifold</span> of <span>Fonts</span>.
+<a
+href="https://doi.org/10.48550/arXiv.2106.09198">https://doi.org/10.48550/arXiv.2106.09198</a></div>
+</div>
+<div id="ref-DGFontDeformableGenerative2021" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[70] </div><div
+class="csl-right-inline">Yangchen Xie, Xinyuan Chen, Li Sun, and Yue Lu.
+2021. <span>DG-Font</span>: <span>Deformable Generative Networks</span>
+for <span>Unsupervised Font Generation</span>. 2021. 5130–5140.
+Retrieved January 11, 2023 from <a
+href="https://openaccess.thecvf.com/content/CVPR2021/html/Xie_DG-Font_Deformable_Generative_Networks_for_Unsupervised_Font_Generation_CVPR_2021_paper.html">https://openaccess.thecvf.com/content/CVPR2021/html/Xie_DG-Font_Deformable_Generative_Networks_for_Unsupervised_Font_Generation_CVPR_2021_paper.html</a></div>
+</div>
+<div id="ref-RadicalCompositionNetwork2021" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[71] </div><div
+class="csl-right-inline">Mobai Xue, Jun Du, Jianshu Zhang, Zi-Rui Wang,
+Bin Wang, and Bo Ren. 2021. Radical <span>Composition Network</span> for
+<span>Chinese Character Generation</span>. In <em>Document
+<span>Analysis</span> and <span>Recognition</span> – <span>ICDAR</span>
+2021</em> (<em>Lecture <span>Notes</span> in <span>Computer
+Science</span></em>), 2021. Springer International Publishing, Cham,
+252–267. <a
+href="https://doi.org/10.1007/978-3-030-86549-8_17">https://doi.org/10.1007/978-3-030-86549-8_17</a></div>
+</div>
+<div id="ref-SEGANSkeletonEnhanced2022" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[72] </div><div
+class="csl-right-inline">Shaozu Yuan, Ruixue Liu, Meng Chen, Baoyang
+Chen, Zhijie Qiu, and Xiaodong He. 2022. <span>SE-GAN</span>: <span
+class="nocase">Skeleton Enhanced GAN-based Model</span> for <span>Brush
+Handwriting Font Generation</span>. <a
+href="https://doi.org/10.48550/arXiv.2204.10484">https://doi.org/10.48550/arXiv.2204.10484</a></div>
+</div>
+<div id="ref-FontCompletionManipulation2021" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[73] </div><div class="csl-right-inline">Ye
+Yuan, Wuyang Chen, Zhaowen Wang, Matthew Fisher, Zhifei Zhang, Zhangyang
+Wang, and Hailin Jin. 2021. Font <span>Completion</span> and
+<span>Manipulation</span> by <span>Cycling Between Multi-Modality
+Representations</span>. <a
+href="https://doi.org/10.48550/arXiv.2108.12965">https://doi.org/10.48550/arXiv.2108.12965</a></div>
+</div>
+<div id="ref-StrokeGANReducingMode2021" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[74] </div><div
+class="csl-right-inline">Jinshan Zeng, Qi Chen, Yunxin Liu, Mingwen
+Wang, and Yuan Yao. 2021. <span>StrokeGAN</span>: <span>Reducing Mode
+Collapse</span> in <span>Chinese Font Generation</span> via <span>Stroke
+Encoding</span>. <em>Proceedings of the AAAI Conference on Artificial
+Intelligence</em> 35, 4, 4 (May 2021), 3270–3277. <a
+href="https://doi.org/10.1609/aaai.v35i4.16438">https://doi.org/10.1609/aaai.v35i4.16438</a></div>
+</div>
+<div id="ref-LearningDrawVector2018" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[75] </div><div
+class="csl-right-inline">Kimberli Zhong. 2018. Learning to draw vector
+graphics : Applying generative modeling to font glyphs. Thesis.
+Massachusetts Institute of Technology. Retrieved December 16, 2022 from
+<a
+href="https://dspace.mit.edu/handle/1721.1/119692">https://dspace.mit.edu/handle/1721.1/119692</a></div>
+</div>
+<div id="ref-EasyGenerationPersonal2011" class="csl-entry"
+role="listitem">
+<div class="csl-left-margin">[76] </div><div
+class="csl-right-inline">Baoyao Zhou, Weihong Wang, and Zhanghui Chen.
+2011. Easy generation of personal <span>Chinese</span> handwritten
+fonts. In <em>2011 <span>IEEE International Conference</span> on
+<span>Multimedia</span> and <span>Expo</span></em>, July 2011. 1–6. <a
+href="https://doi.org/10.1109/ICME.2011.6011892">https://doi.org/10.1109/ICME.2011.6011892</a></div>
+</div>
+</div>
+</body>
+</html>
