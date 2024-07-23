@@ -1,4 +1,4 @@
-# Font AI Generation Comparison Table
+# AI Font Generation Projects: Comparison Table
 
 ## Overview
 This repository contains a comprehensive comparison table of various AI-based font generation projects. The table is located at [comparison table font ai generation.md](https://github.com/filipaldi/ai-font-generation-projects/blob/a70df9c0ebb9b63896d1d8211a481860c7243753/comparison%20table%20font%20ai%20generation.md).
@@ -51,7 +51,7 @@ If you use this comparison table in your research, please cite it as follows:
 ```
 @misc{FontAIGenerationComparison2024,
 author = {Filip Paldia},
-title = {Font AI Generation Comparison Table},
+title = {AI Font Generation Projects: Comparison Table},
 year = {2024},
 howpublished = {\https://github.com/filipaldi/ai-font-generation-projects/}}
 }
