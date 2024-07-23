@@ -33,10 +33,10 @@ The comparison table lists various AI-based font generation projects and their s
 ## How to Collaborate
 We welcome contributions from the community to improve and expand this comparison table. If you have information about a project that is not listed or if you find any discrepancies, please feel free to contribute.
 
-## How to Submit Issues
+### How to Submit Issues
 If you encounter any issues or have suggestions for improvements, please submit an issue via the GitHub [issues page](https://github.com/filipaldi/ai-font-generation-projects/issues). Provide as much detail as possible to help us understand and address the issue promptly.
 
-## How to Pull-Request
+### How to Pull-Request
 1. Fork the repository.
 2. Create a new branch for your changes: `git checkout -b my-new-feature`.
 3. Make your changes and commit them: `git commit -am 'Add new feature'`.
