@@ -1,7 +1,7 @@
 # AI Font Generation Projects: Comparison Table
 
 ## Overview
-This repository contains a comprehensive comparison table of various AI-based font generation projects. The table is located at [comparison table font ai generation.md](https://github.com/filipaldi/ai-font-generation-projects/blob/a70df9c0ebb9b63896d1d8211a481860c7243753/comparison%20table%20font%20ai%20generation.md).
+This repository contains a comprehensive comparison table of various AI-based font generation projects. The table is located at [comparison table font ai generation.csv](comparison table font ai generation.csv).
 
 ## Columns Legend
 Each row represents a different project, and the columns provide detailed information about the project's characteristics.
