@@ -1,15 +1,31 @@
-# AI Font Generation Projects: Comparison Table
+# AI Font Generation Benchmarks
+
+Comparative analysis (Bencmarks) of AI-based font generation projects since 2010.
+
 
 ## Overview
-This repository contains a comprehensive comparison table of various AI-based font generation projects. The table is located at [comparison table font ai generation.csv](comparison table font ai generation.csv).
+
+The table contains a comprehensive comparison of AI-based font generation projects, scrutinising 18 factors of every project. The information is sourced from cited articles.  
+
+It is useful when
+
+- Searching for similar projects in your area
+- Conducting a survey of the previous projects
+- Getting an overview when starting a new Font AI project
+
 
 ## Columns Legend
 Each row represents a different project, and the columns provide detailed information about the project's characteristics.
+
+Metadata
 
 - **Citkey**: Citation key for referencing the project.
 - **Short Name**: Abbreviated name of the project.
 - **Name**: Full name of the project.
 - **Year**: Year of publication.
+
+Parameters
+
 - **Tasks**: Primary tasks addressed by the model (e.g., reconstruction, style transfer).
 - **Input Type**: Types of inputs the model uses (e.g., vector paths, raster images).
 - **Input Detail**: Specific details about the input types.
